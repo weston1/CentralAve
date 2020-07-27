@@ -1,0 +1,149 @@
+.FeatureArray {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0.2rem;
+  border-radius: var(--borderRadius);
+}
+
+.FeatureArray figcaption {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  line-height: 2rem;
+  opacity: 0;
+  transition: ease all 0.3s;
+}
+
+.FeatureArray p {
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+  line-height: 0.4;
+  text-align: center;
+}
+.FeatureArray .employee {
+  margin: 2rem auto;
+  width: 50px;
+  height: 50px;
+  transition: all ease 0.3s;
+}
+.FeatureArray .employee-img {
+  transition: all ease 0.3s;
+}
+.FeatureArray .employee-img:hover {
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  .FeatureArray {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .FeatureArray .employee {
+    margin: 2rem auto;
+    width: 40px;
+    height: 40px;
+    transition: all ease 0.3s;
+  }
+}
+
+.FeatureArray--Item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 5rem);
+  margin: 0;
+  padding: 0;
+  filter: saturate(0);
+  transition: ease all 0.3s;
+}
+.FeatureArray--Item:hover,
+.FeatureArray--Item:hover figcaption {
+  filter: saturate(1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .FeatureArray--Item {
+    width: 100%;
+    max-width: 30rem;
+  }
+}
+
+.FeatureArray--Item > div {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.FeatureArray--Item figcaption {
+  text-align: center;
+  padding: 0.2rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@supports (object-fit: cover) {
+  .FeatureArray--Item img {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+}
+
+.Popup-Overlay {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Popup-Background {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Popup-Inner {
+  background: white;
+  top: 35%;
+  margin: 0 auto;
+  width: 400px;
+  height: 50%;
+  max-width: 500px;
+  max-height: 400px;
+  display: block;
+  position: fixed;
+  z-index: 99999999;
+  padding: 8rem;
+  overflow: hidden;
+  transition: ease all 0.2s;
+  box-shadow: 20px 20px 100px var(--secondary);
+}
+
+.Popup-Close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}

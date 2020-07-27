@@ -1,22 +1,21 @@
 ---
 template: SinglePost
-title: Sign
+title: Headless eCommerce
 status: Featured / Published
-date: '2018-03-27'
-featuredImage: 'https://ucarecdn.com/157877ea-a2cb-49b6-8130-768fbe1a60a7/'
+date: "2020-05-18"
+featuredImage: "https://images.unsplash.com/photo-1449247666642-264389f5f5b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  interdum arcu vitae augue pulvinar sodales.
 categories:
-  - category: News
+  - category: Tech
 meta:
-  canonicalLink: ''
-  description: test meta description
+  canonicalLink: ""
+  description: Headless eCommerce 2020
   noindex: false
-  title: test meta title
+  title: Headless eCommerce 2020
 ---
+
 Paragraphs are separated by a blank line.
 
 ![Test Image](https://ucarecdn.com/ac9898a0-413a-467b-95fa-0a9959c30710/)
@@ -27,9 +26,9 @@ The second paragraph. This is placeholder text that our web designers put here t
 
 ### Unordered lists:
 
-* this one
-* that one
-* the other one
+- this one
+- that one
+- the other one
 
 ### Ordered lists:
 
@@ -43,15 +42,3 @@ The second paragraph. This is placeholder text that our web designers put here t
 > if you like.
 
 ## Heading 2
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6

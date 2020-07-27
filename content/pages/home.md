@@ -1,30 +1,57 @@
 ---
 template: HomePage
 slug: ''
-title: Yellowcake
+title: Design & deploy amazing ideas at scale with Central Ave Marketing
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+logo: '../images/screen1.png'
+subtitle: Central Ave transforms your digital marketing process - leading to better products, faster.
+section1: >-
+  ## The Heart of St. Pete is Local
+
+  Local business and essential business are one in the same here in St. Petersburg, Florida. A walk down Central Avenue is all you need to see the vibrancy of St. Pete come to life with the entrepreneurial spirit of the people & local businesses that give us such an exciting city to live in and&nbsp;explore.
+section2: >-
+  ## Bringing Local Online
+
+  We live in an increasingly digital world though and now more than ever it's important that people are able to find your local business online and that their digital experience reflects the one you offer them in real life. At Central Avenue Marketing we help showcase what makes your local business unique using a variety of proven digital marketing tactics that support local business to help you drive high-quality leads that grow your business.
+featureArray:
+  - alt: ReactJS Developer
+    image: '../images/svg/react.svg'
+    icon: Search
+    title: SEO
+  - alt: Gatsby Static Site Developer
+    image: '../images/svg/gatsby.svg'
+    title: GatsbyJS
+  - alt: HTML EXPERT
+    image: '../images/svg/html5.svg'
+    title: HTML5
+  - alt: GraphQL
+    image: '../images/svg/graphql.svg'
+    title: GraphQL
+  - alt: VUE Developer
+    image: '../images/svg/vue-9.svg'
+    title: VUE
+  - alt: Expert Shopify Developer
+    image: '../images/svg/shopify.svg'
+    title: Shopify
+  - alt: Swift Developer
+    image: '../images/svg/swift-15.svg'
+    title: Swift
+  - alt: Github
+    image: '../images/svg/github-1.svg'
+    title: Github
+  - alt: Adobe Illustrator
+    image: '../images/svg/adobe-illustrator-cc.svg'
+    title: Adobe Illustrator
+  - alt: Photoshop Master
+    image: '../images/svg/photoshop-cc.svg'
+    title: Photoshop
+  - alt: Invision
+    image: '../images/svg/invision.svg'
+    title: Invision
+  - alt: Wordpress
+    image: '../images/svg/wp.svg'
+    title: Wordpress
 meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  description: A boutique marketing agency partnering with local businesses in the St. Petersburg & Tampa areas to grow their businesses using proven Marketing&nbsp;strategies.
+  title: Central Ave Marketing
 ---
-
-Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
-
-View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/yellowcake/blob/master/README.md).
-
-# Features
-
-- **[Gatsby](https://gatsbyjs.org)** static site generator
-- **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
-- Dynamic menus and forms
-- **[Mailchimp](http://mailchimp.com)** and **[Uploadcare](https://uploadcare.com)** integrations
-- Fully responsive layout for mobile and widescreen browsing
-- Blog searching and paging functionality
-- Seamless image and content sliders
-
-## Get started
-
-View the [Netlify CMS Docs](https://www.netlifycms.org/docs/) and the [Netlify CMS Repo](https://github.com/netlify/netlify-cms).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)

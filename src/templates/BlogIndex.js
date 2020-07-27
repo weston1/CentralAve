@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
+
 import qs from 'qs'
 
 import PageHeader from '../components/PageHeader'
@@ -78,7 +79,7 @@ export const BlogIndexTemplate = ({
           )}
 
           {!!posts.length && (
-            <section className="section">
+            <section className="section thick">
               <div className="container">
                 <PostSection posts={filteredPosts} />
               </div>

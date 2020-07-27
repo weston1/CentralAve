@@ -1,0 +1,57 @@
+.MainHeader {
+  color: var(--secondary);
+  padding: 10rem 0;
+}
+
+.MainHeader .BackgroundImage {
+  opacity: 0.1;
+  background-position: top center;
+  border-radius: var(--borderRadius);
+}
+
+.MainHeader-left {
+  padding: 15rem 0;
+  text-align: left;
+}
+
+.MainHeader--Logo {
+  width: 300px;
+}
+
+.MainHeader--BG {
+  transform: rotate3d(0.1, -0.866, 0, 15deg) rotate(1deg);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  background-image: linear-gradient(-180deg, var(--primary) 100%, #5acfcc 0);
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.MainHeader--Title {
+  font-size: 5rem;
+  line-height: 5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.MainHeader--Subtitle {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.MainHeader .container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .MainHeader {
+    padding: 7rem 0;
+  }
+  .MainHeader-left {
+    padding: 12.5rem 0;
+    text-align: center;
+  }
+}
