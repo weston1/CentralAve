@@ -12,5 +12,3 @@ section1: >-
 
   Set-up a time with us to discuss your business needs and how we can help you grow.
 ---
-
-## Reach out here

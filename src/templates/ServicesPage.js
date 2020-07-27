@@ -2,8 +2,9 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { Search, ArrowRight, Feather } from 'react-feather'
 
-import PageHeader from '../components/PageHeader'
+import SecondaryHeader from '../components/SecondaryHeader'
 import Content from '../components/Content'
+import BackgroundVideo from '../components/BackgroundVideo'
 import Image from '../components/Image'
 import Layout from '../components/Layout'
 import FooterNote from '../components/FooterNote'
@@ -15,14 +16,75 @@ export const ServicesPageTemplate = ({
   section1,
   img0,
   img1,
-  featuredImage
+  featuredImage,
+  video,
+  videoPoster,
+  videoTitle
 }) => (
   <main className="ServicesPage">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
+    <SecondaryHeader title={title} subtitle={subtitle} />
+    <section className="BackgroundVideo-section section container">
+      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
+        {video && <source src={video} type="video/mp4" />}
+      </BackgroundVideo>
+    </section>
+
+    <section className="section thick">
+      <div className="container row">
+        <div className="col-lg-4 my-auto mx-auto">
+          <Content source={section1} />
+          <Link
+            to="/services"
+            alt="Central Ave Web Services"
+            className="Button Button--Outline"
+          >
+            Our Digital Services
+          </Link>
+        </div>
+
+        <div className="col-lg-6 mx-auto order-sm-0 my-auto">
+          <img
+            src="https://marvelapp.com/static/democratise@2x-fcb93c33bc9e2798b7af1400a7a95090-92aa8.jpg"
+            className="img-fluid"
+            max-width="200px"
+            alt="St Pete Web Development"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="container row mx-auto">
+        <div className="col-lg-12">
+          <hr />
+        </div>
+        <div className="col-lg-2 taCenter mx-auto">
+          <h4>&lt;/&gt;</h4>
+          <p>Detailed Documentation for client success</p>
+        </div>
+        <div className="col-lg-2 taCenter mx-auto">
+          <h4>15+</h4>
+          <p>Years combined experience</p>
+        </div>
+        <div className="col-lg-2 taCenter mx-auto">
+          <h4>100+</h4>
+          <p>Hours lorem ipsum lore </p>
+        </div>
+        <div className="col-lg-2 taCenter mx-auto">
+          <h4>FREE</h4>
+          <p>Consultation and website review for all clients</p>
+        </div>
+        <div className="col-lg-6 mx-auto text-center pt-4">
+          <Link
+            to="/contact/"
+            alt="Central Ave Marketing Digital Services Contact"
+            className="Button Button--Outline"
+          >
+            Lets Talk
+          </Link>
+        </div>
+      </div>
+    </section>
 
     <section className="section">
       <div className="col-lg-6 mx-auto taCenter">
@@ -74,38 +136,7 @@ export const ServicesPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section">
-      <div className="container row mx-auto">
-        <div className="col-lg-12">
-          <hr />
-        </div>
-        <div className="col-lg-2 taCenter mx-auto">
-          <h4>&lt;/&gt;</h4>
-          <p>Detailed Documentation for client success</p>
-        </div>
-        <div className="col-lg-2 taCenter mx-auto">
-          <h4>15+</h4>
-          <p>Years combined experience</p>
-        </div>
-        <div className="col-lg-2 taCenter mx-auto">
-          <h4>100+</h4>
-          <p>Hours lorem ipsum lore </p>
-        </div>
-        <div className="col-lg-2 taCenter mx-auto">
-          <h4>FREE</h4>
-          <p>Consultation and website review for all clients</p>
-        </div>
-        <div className="col-lg-6 mx-auto pt-4">
-          <Link
-            to="/contact/"
-            alt="Central Ave Marketing Digital Services Contact"
-            className="Button"
-          >
-            Lets Talk
-          </Link>
-        </div>
-      </div>
-    </section>
+
     <FooterNote />
   </main>
 )
@@ -129,6 +160,9 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        video
+        videoPoster
+        videoTitle
         section1
         img0
         img1

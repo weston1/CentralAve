@@ -57,6 +57,7 @@
   width: 100%;
   transition: 0.3s ease all;
   background: transparent;
+  color: #000;
 }
 
 .Form--InputText:valid,
@@ -71,10 +72,12 @@
 .Form--InputText:not(:empty) + span,
 .Form--InputText:invalid:not(:empty) + span,
 .Form--InputText:active + span,
-.Form--InputText:focus + span {
-  top: 0;
-  left: 0.5rem;
+.Form--InputText:focus + span,
+::placeholder:focus {
+  top: -1rem;
   font-size: 1.2rem;
+  background-color: white !important;
+  color: #000;
 }
 
 .Form--Input:required:invalid:not(:empty) {
@@ -82,7 +85,7 @@
 }
 
 .Form--Select {
-  background: none;
+  background: white;
   appearance: none;
 }
 

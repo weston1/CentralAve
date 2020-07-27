@@ -11,19 +11,15 @@ import FormSimple from '../components/FormSimple'
 export const ContactPageTemplate = ({ section1, body }) => (
   <main className="Contact">
     <section className="Contact--Section1 row">
-      <div className="col-lg-6 p-5 order-last">
+      <div className="col-lg-6 p-5 mx-auto text-center">
+        <Content source={section1} />
+
         <div class="pattern-dots gray-light m-10">
           <div className="Contact--Card">
             <div className="container">
               <FormSimple />
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="col-lg-6 m-auto">
-        <div className="container">
-          <Content source={section1} />
         </div>
       </div>
     </section>

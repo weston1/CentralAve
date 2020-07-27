@@ -2,6 +2,8 @@
   position: relative;
   overflow: hidden;
   height: 40rem;
+  margin-top: -10vh;
+  border-radius: var(--borderRadius);
 }
 .BackgroundVideo {
   display: block;

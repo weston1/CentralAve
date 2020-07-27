@@ -1,10 +1,10 @@
 ---
 template: HomePage
 slug: ''
-title: Design & deploy amazing ideas at scale with Central Ave Marketing
+title: Design, develop and deploy your next idea
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
 logo: '../images/screen1.png'
-subtitle: Central Ave transforms your digital marketing process - leading to better products, faster.
+subtitle: Central Ave Marketing transforms your digital marketing process - leading to better products, faster.
 section1: >-
   ## The Heart of St. Pete is Local
 

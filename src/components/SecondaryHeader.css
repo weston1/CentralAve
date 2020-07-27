@@ -1,24 +1,26 @@
-.MainHeader {
+.SecondaryHeader {
   color: var(--secondary);
   padding: 10rem 0;
+  background-color: var(--primary);
+  height: 80vh;
 }
 
-.MainHeader .BackgroundImage {
+.SecondaryHeader .BackgroundImage {
   opacity: 0.1;
   background-position: top center;
   border-radius: var(--borderRadius);
 }
 
-.MainHeader-left {
+.SecondaryHeader-left {
   padding: 15rem 0;
   text-align: left;
 }
 
-.MainHeader--Logo {
+.SecondaryHeader--Logo {
   width: 300px;
 }
 
-.MainHeader--BG {
+.SecondaryHeader--BG {
   transform: rotate3d(0.1, -0.866, 0, 15deg) rotate(1deg);
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
@@ -29,34 +31,34 @@
   border-radius: 5px;
 }
 
-.MainHeader--Title {
+.SecondaryHeader--Title {
   font-size: 5rem;
   line-height: 5.5rem;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
 }
 
-.MainHeader--Subtitle {
+.SecondaryHeader--Subtitle {
   font-weight: 400;
   font-size: 2rem;
   line-height: 3rem;
   margin: 2rem 0;
   text-transform: none;
-  text-align: left;
+  text-align: center;
 }
 
-.MainHeader .container {
+.SecondaryHeader .container {
   animation: fadeIn 0.5s ease-out;
 }
 
 @media (max-width: 600px) {
-  .MainHeader {
+  .SecondaryHeader {
     padding: 7rem 0;
   }
-  .MainHeader-left {
+  .SecondaryHeader-left {
     padding: 13rem 0;
   }
-  .MainHeader--BG {
+  .SecondaryHeader--BG {
     margin: 3rem 0 0 0;
   }
 }
