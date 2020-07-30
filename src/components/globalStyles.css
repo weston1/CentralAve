@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Dogma';
+  src: url('../../static/fonts/DogmaBold.ttf');
+}
+@font-face {
+  font-family: 'Proxima-Nova';
+  src: url('../../static/fonts/ProximaNovaReg.otf');
+}
 :root {
-  --primary: #75fcb7;
-  --secondary: #000;
-  --tertiary: #1600f5;
+  --primary: #055057;
+  --secondary: #fa868c;
+  --tertiary: #faf6de;
   --colorLight: #fdfdfd;
   --colorDark: #000;
   --colorGrey: #303030;
@@ -10,9 +18,9 @@
   --darkGrey: #272727;
   --footerBg: #161616;
   --danger: #ff3d3d;
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Source Sans Pro', sans-serif;
-  --font-system: 'Source Sans Pro', system-ui; /* postcssPresetEnv */
+  --font-primary: 'Dogma', sans-serif;
+  --font-secondary: 'Proxima-Nova', sans-serif;
+  --font-system: 'Proxima-Nova', system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;
   --boxShadow: rgba(8, 11, 14, 0.06) 0px 0px 1px 0px,
     rgba(8, 11, 14, 0.1) 0px 16px 16px -1px;
@@ -49,7 +57,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   position: relative;
-  background: white;
+  background: var(--tertiary);
   color: var(--secondary);
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -108,7 +116,6 @@ a {
 strong {
   font-weight: 600;
 }
-
 h1,
 h2,
 h3,
@@ -116,13 +123,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 0.5em;
 }
-
 h1 {
   font-size: 69px;
   line-height: 76px;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 h2 {
   font-size: 25px;
@@ -1291,9 +1300,9 @@ blockquote {
 }
 
 .Button--Solid {
-  background: var(--primary);
-  color: black;
-  border: solid 2px var(--primary);
+  background: var(--secondary);
+  color: white;
+  border: solid 2px var(--secondary);
   border-radius: 50px;
   max-width: 200px;
 }
@@ -1397,6 +1406,7 @@ blockquote {
 .FeatureCard {
   border-radius: 12px;
   border: 1px solid rgb(247, 248, 249);
+  background-color: white;
   box-shadow: var(--boxShadow);
   box-sizing: border-box;
   color: rgb(0, 0, 0);
