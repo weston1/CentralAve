@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 
 import Image from './Image'
 import Content from './Content'
@@ -31,10 +32,21 @@ const MainHeader = ({
         <h1 className="MainHeader--Title">{title}</h1>
         <h2 className="MainHeader--Subtitle">{subtitle}</h2>
         <div>
-          <button className="Button Button--Solid">Let's Talk</button>
-          <button className="Button Button--Outline my-auto">
+          <Link
+            to="/contact"
+            className="Button Button--Solid"
+            alt="Central Ave Marketing Contact Us"
+          >
+            Let's Talk
+          </Link>
+
+          <Link
+            to="/contact"
+            className="Button Button--Outline my-auto"
+            alt="Central Ave Marketing Contact Us"
+          >
             Watch Video <Play size="1rem" />
-          </button>
+          </Link>
         </div>
       </div>
 

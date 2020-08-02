@@ -25,6 +25,7 @@ export const HomePageTemplate = ({
   logo,
   section1,
   section2,
+  section3,
   featureArray,
   body
 }) => (
@@ -74,6 +75,23 @@ export const HomePageTemplate = ({
           >
             Our Digital Services
           </Link>
+        </div>
+      </div>
+    </section>
+
+    <section className="section">
+      <div className="row">
+        <div className="container col-lg-5 my-auto mx-auto order-first">
+          <div className="pattern-dots py-5 my-2"></div>
+          <Content source={section1} />
+        </div>
+        <div className="container col-lg-4 mx-auto">
+          <img
+            src="https://images.unsplash.com/photo-1521193698642-9810ddf4bff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+            className="img-fluid imgFeature"
+            max-width="200px"
+            alt="St Pete Web Development"
+          />
         </div>
       </div>
     </section>
@@ -228,12 +246,6 @@ export const HomePageTemplate = ({
         </div>
       </div>
     </section>
-
-    <section className="section">
-      <div className="container">
-        <Content source={body} />
-      </div>
-    </section>
   </main>
 )
 
@@ -263,6 +275,7 @@ export const pageQuery = graphql`
         logo
         section1
         section2
+        section3
       }
     }
   }
