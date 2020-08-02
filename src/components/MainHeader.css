@@ -39,6 +39,7 @@
 .MainHeader--Subtitle {
   font-weight: 400;
   font-size: 2rem;
+  font-family: var(--font-secondary);
   line-height: 3rem;
   margin: 2rem 0;
   text-transform: none;

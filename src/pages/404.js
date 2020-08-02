@@ -18,20 +18,19 @@ export default ({ children }) => (
     render={data => (
       <Layout>
         <Helmet>
-          <title>404 – Page Not Found</title>
+          <title>404</title>
         </Helmet>
         <section className="section thick">
           <div className="container skinny taCenter">
             <p>
               <AlertTriangle size="5rem" />
             </p>
-            <h1>404 - Page Not Found</h1>
-            <p>
-              We can't find the page you are looking for!
+            <h1>404</h1>
+            <h4>
+              Outlook hazy.. please try again.
               <br />
-              Head back to{' '}
               <Link to="/">{_get(data, 'globalSettings.siteTitle')}</Link>
-            </p>
+            </h4>
           </div>
         </section>
       </Layout>

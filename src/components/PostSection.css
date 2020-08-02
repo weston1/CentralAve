@@ -46,6 +46,8 @@
   max-width: 200px;
   margin: 0 auto 4rem auto;
   line-height: 1.2;
+  font-size: 2rem;
+  font-family: var(--font-secondary);
 }
 
 @media screen and (max-width: 888px) {
