@@ -25,7 +25,7 @@ export default ({ children }) => (
             <h4>
               Outlook hazy.. please try again.
               <br />
-              <Link className="button" to="/">
+              <Link className="Button" to="/">
                 {_get(data, 'globalSettings.siteTitle')} Homepage
               </Link>
             </h4>

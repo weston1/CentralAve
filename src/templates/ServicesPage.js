@@ -23,7 +23,7 @@ export const ServicesPageTemplate = ({
 }) => (
   <main className="ServicesPage">
     <SecondaryHeader title={title} subtitle={subtitle} />
-    <section className="BackgroundVideo-section section container">
+    <section className="BackgroundVideo-section section container imgFeature">
       <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
@@ -31,7 +31,7 @@ export const ServicesPageTemplate = ({
 
     <section className="section thick">
       <div className="container row">
-        <div className="col-lg-4 my-auto mx-auto">
+        <div className="col-lg-5 my-auto mx-auto">
           <Content source={section1} />
           <Link
             to="/services"
@@ -42,10 +42,10 @@ export const ServicesPageTemplate = ({
           </Link>
         </div>
 
-        <div className="col-lg-6 mx-auto order-sm-0 my-auto">
+        <div className="col-lg-5 mx-auto order-sm-0 my-auto">
           <img
             src="https://marvelapp.com/static/democratise@2x-fcb93c33bc9e2798b7af1400a7a95090-92aa8.jpg"
-            className="img-fluid"
+            className="img-fluid FeatureCard"
             max-width="200px"
             alt="St Pete Web Development"
           />

@@ -57,7 +57,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   position: relative;
-  background: var(--tertiary);
+  background: whitesmoke;
   color: var(--primary);
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -110,6 +110,10 @@ body.dark-mode .pattern-dots {
 
 a {
   color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--tertiary);
   text-decoration: none;
 }
 
@@ -1461,6 +1465,12 @@ blockquote {
   opacity: 0.8;
   z-index: -1;
   color: #fff;
+}
+
+/* Service Page */
+
+.ServicesPage {
+  background-color: white;
 }
 
 /* Contact */
