@@ -55,15 +55,53 @@ export class Navigation extends Component {
             <NavLink className="Nav--li" to="/services">
               services
             </NavLink>
-            <NavLink className="Nav--li" to="/blog">
-              blog
-            </NavLink>
             <NavLink className="Nav--li" to="/contact">
               consultation
             </NavLink>
-            <NavLink className="Nav--li" to="/infinite">
-              cool
-            </NavLink>
+            <div
+              className={`Nav--Group ${
+                this.state.activeSubNav === 'cartridges' ? 'active' : ''
+              }`}
+            >
+              <span
+                className={`NavLink Nav--GroupParent ${
+                  this.props.location.pathname.includes('craft') ||
+                  this.props.location.pathname.includes('reserve') ||
+                  this.props.location.pathname.includes('ish') ||
+                  this.props.location.pathname.includes('micro')
+                    ? 'active'
+                    : ''
+                }`}
+                onClick={() => this.toggleSubNav('cartridges')}
+              >
+                Explore
+              </span>
+              <div className="Nav--GroupLinks">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <h4>Page</h4>
+                      <NavLink to="/craft/" className="Nav--GroupLink">
+                        Blog
+                      </NavLink>
+                      <NavLink to="/blog/" className="Nav--GroupLink">
+                        Something 2
+                      </NavLink>
+                    </div>
+                    <div className="col-lg-4">
+                      <h4>Company</h4>
+                      <NavLink to="/ish/" className="Nav--GroupLink">
+                        About Us
+                        <small>Learn About Our Team</small>
+                      </NavLink>
+                      <NavLink to="/micro/" className="Nav--GroupLink">
+                        What We Are Working On
+                      </NavLink>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

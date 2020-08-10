@@ -2,13 +2,16 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'gatsby'
 
-import { Instagram, Globe, Mail, Twitter } from 'react-feather'
+import { Instagram, Globe, Mail, Facebook } from 'react-feather'
 
 export default () => (
   <div>
     <footer className="footer">
       <div className="container row mx-auto">
-        <div className="col-lg-3 mx-auto text-center">
+        <div className="col-lg-3 col-6 mx-auto text-center">
+          <img src="../images/CentralAve-LogoFull.svg" />
+        </div>
+        <div className="col-lg-2 col-6 mx-auto text-center">
           <ul>
             <li>
               <h5>Pages</h5>
@@ -24,7 +27,7 @@ export default () => (
             </li>
           </ul>
         </div>
-        <div className="col-lg-3 mx-auto text-center">
+        <div className="col-lg-2 col-6 mx-auto text-center">
           <ul>
             <li>
               <h5>Serviecs</h5>
@@ -41,7 +44,7 @@ export default () => (
           </ul>
         </div>
 
-        <div className="col-lg-3 mx-auto text-center">
+        <div className="col-lg-2 col-6 mx-auto text-center">
           <ul>
             <li>
               <h5>Contact</h5>
@@ -82,7 +85,7 @@ export default () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Twitter size="3rem" className="footer-li p-2" />
+            <Facebook size="3rem" className="footer-li p-2" />
           </a>
           <a
             href="https://coastal-division.com"

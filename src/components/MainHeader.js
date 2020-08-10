@@ -28,12 +28,21 @@ const MainHeader = ({
           size="fit"
         />
       )}
+      <div class="main__circles">
+        <div class="main__circle"></div>
+        <div class="main__circle js-rellax" data-rellax-speed="2"></div>
+        <div class="main__circle js-rellax" data-rellax-speed="1"></div>
+        <div class="main__circle js-rellax" data-rellax-speed="2"></div>
+        <div class="main__circle js-rellax" data-rellax-speed=".3"></div>
+        <div class="main__circle"></div>
+        <div class="main__circle js-rellax" data-rellax-speed="1"></div>
+      </div>
       <div className="col-lg-5 mx-auto my-auto">
         <h1 className="MainHeader--Title">{title}</h1>
         <h2 className="MainHeader--Subtitle">{subtitle}</h2>
         <div>
           <Link
-            to="/contact"
+            to="/contact/"
             className="Button Button--Solid"
             alt="Central Ave Marketing Contact Us"
           >
@@ -41,21 +50,17 @@ const MainHeader = ({
           </Link>
 
           <Link
-            to="/contact"
+            to="/services/"
             className="Button Button--Outline my-auto"
             alt="Central Ave Marketing Contact Us"
           >
-            Watch Video <Play size="1rem" />
+            Explore Our Work <Play size="0.8rem" />
           </Link>
         </div>
       </div>
 
-      <div className="col-lg-6 text-center my-auto">
-        <div className="MainHeader--BG">
-          {logo && (
-            <Image src={logo} alt={title} className="MainHeader--Logo" />
-          )}
-        </div>
+      <div className="col-lg-6 text-center my-auto py-4">
+        {logo && <Image src={logo} alt={title} className="MainHeader--Logo" />}
       </div>
     </div>
   )

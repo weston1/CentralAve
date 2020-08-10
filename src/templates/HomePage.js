@@ -39,17 +39,8 @@ export const HomePageTemplate = ({
     />
 
     <section className="section">
-      <div className="row">
-        <div className="container col-lg-4 mx-auto">
-          <img
-            src="https://images.unsplash.com/photo-1521193698642-9810ddf4bff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
-            className="img-fluid imgFeature"
-            max-width="200px"
-            alt="St Pete Web Development"
-          />
-        </div>
-        <div className="container col-lg-5 my-auto mx-auto order-first">
-          <div className="pattern-dots py-5 my-2"></div>
+      <div className="container row">
+        <div className="col-lg-8 col-12 my-auto mx-auto text-center">
           <Content source={section1} />
         </div>
       </div>
@@ -57,16 +48,16 @@ export const HomePageTemplate = ({
 
     <section className="section">
       <div className="row">
-        <div className="container col-lg-4 mx-auto order-sm-0 my-auto">
+        <div className="container col-lg-4 col-6 mx-auto order-sm-0 my-auto">
           <img
             src="https://images.unsplash.com/photo-1593829427707-929b84de3774?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"
             className="img-fluid imgFeature"
             max-width="200px"
             alt="St Pete Web Development"
           />
-        </div>
-        <div className="container col-lg-5 my-auto mx-auto order-sm-2">
           <div className="pattern-dots py-5 my-2"></div>
+        </div>
+        <div className="container col-lg-5 col-6 my-auto mx-auto order-sm-2">
           <Content source={section2} />
           <Link
             to="/services"
@@ -75,23 +66,6 @@ export const HomePageTemplate = ({
           >
             Our Digital Services
           </Link>
-        </div>
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="row">
-        <div className="container col-lg-5 my-auto mx-auto order-first">
-          <div className="pattern-dots py-5 my-2"></div>
-          <Content source={section1} />
-        </div>
-        <div className="container col-lg-4 mx-auto">
-          <img
-            src="https://images.unsplash.com/photo-1521193698642-9810ddf4bff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
-            className="img-fluid imgFeature"
-            max-width="200px"
-            alt="St Pete Web Development"
-          />
         </div>
       </div>
     </section>
@@ -230,21 +204,8 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <section>
-      <FeatureArray images={featureArray} />
-    </section>
-
-    <section className="section">
+    <section className="section thick">
       <FooterNote />
-
-      <div className="row">
-        <div className="container col-lg-5 my-auto mx-auto order-sm-2">
-          <div className="pattern-dots py-5"></div>
-        </div>
-        <div className="container col-lg-4 mx-auto order-sm-0 my-auto">
-          <Content source={body} />
-        </div>
-      </div>
     </section>
   </main>
 )

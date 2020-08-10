@@ -5,6 +5,7 @@
   justify-content: flex-start;
   max-width: 500px;
   margin: 2.5rem 0;
+  font-family: var(--font-secondary) !important;
 }
 
 .Form > * + * {
@@ -43,7 +44,7 @@
 }
 
 .Form--Input {
-  font-family: inherit;
+  font-family: var(--font-secondary);
   flex-grow: 1;
   box-sizing: border-box;
   display: block;

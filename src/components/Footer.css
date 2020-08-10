@@ -1,8 +1,7 @@
 .footer {
   display: block;
   height: auto;
-  font-size: 12px;
-  background: inherit;
+  font-size: 1vw;
   padding: 2rem 0;
   bottom: 0 !important;
   width: 100%;

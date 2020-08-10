@@ -37,7 +37,7 @@
   padding: 0.5rem 1rem;
   display: block;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 17px;
   line-height: 30px;
   transition: all ease 0.2s;
   color: black;
@@ -54,8 +54,7 @@
   color: var(--primary);
 }
 .NavLink.active {
-  color: var(--secondary);
-  text-decoration: line-through;
+  color: var(--primary);
 }
 .NavLink:hover .Nav-li {
   opacity: 0.5;
@@ -88,13 +87,16 @@
 
 .Nav--GroupLinks {
   position: absolute;
-  top: 100%;
   left: 0;
-  width: auto;
-  background: white;
+  right: 0;
+  width: 50vw;
+  background: var(--lightGrey);
+  margin: 2rem auto;
   max-height: 0;
   overflow: hidden;
   transition: 0.3s ease all;
+  border-radius: var(--borderRadius);
+  box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .Nav--Group.active .Nav--GroupLinks {
@@ -196,8 +198,7 @@
     color: var(--primary);
   }
   .NavLink.active {
-    color: var(--colorThree);
-    text-decoration: line-through;
+    color: var(--primary);
   }
   .NavLink:hover .Nav-li {
     opacity: 0.5;

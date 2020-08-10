@@ -1,9 +1,9 @@
 ---
 template: HomePage
 slug: ''
-title: St. Pete & Tampa Marketing Agency Services
+title: St. Pete & Tampa Digital Marketing Services
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-logo: '../images/screen1.png'
+logo: '../images/logo.png'
 subtitle: Central Ave Marketing transforms your digital marketing process - leading to better products, faster.
 section1: >-
   ## The Heart of St. Pete is Local
