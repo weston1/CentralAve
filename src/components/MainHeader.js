@@ -52,10 +52,10 @@ const MainHeader = ({
             </Link>
             <Link
               to="/services/"
-              className="Button Button--Outline my-auto"
+              className="Button Button--Outline"
               alt="Central Ave Marketing Contact Us"
             >
-              Our Work
+              Our Services
             </Link>
           </Fade>
         </div>

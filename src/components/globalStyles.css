@@ -1306,12 +1306,11 @@ ul {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-
   padding: 2vh 6vw;
-  margin: 0.25vh 1vw 0.25vh 0;
-
+  margin: 1.5vh 0.75vw 1.5vh 0;
   transition: all 0.2s ease;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .Button--Solid {
@@ -1319,7 +1318,6 @@ ul {
   white-space: nowrap;
   color: white;
   border: solid 2px var(--secondary);
-  border-radius: 50px;
 }
 .Button--Solid:hover,
 .Button--Solid:focus {
@@ -1334,8 +1332,6 @@ ul {
   color: black;
   border: solid 2px var(--secondary);
   transition: all 0.2s ease;
-  border-radius: 50px;
-  max-width: 400px;
 }
 .Button--Outline:hover,
 .Button--Outline:focus {
@@ -1355,7 +1351,6 @@ ul {
   outline: none;
   display: inline-block;
   padding: 1rem 2.5rem;
-  margin: 0.25rem 1rem 0.25rem 0;
 }
 .Button--Nav:hover,
 .Button--Nav:focus {
