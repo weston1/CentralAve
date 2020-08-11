@@ -1,6 +1,4 @@
 .Contact {
-  height: 100%;
-  min-height: 100%;
 }
 .Contact--Section1 {
   padding: 10rem 0;
@@ -10,8 +8,6 @@
   max-width: 500px;
 }
 .Contact--Card {
-  height: 100%;
-  min-height: 100%;
   overflow: hidden;
   padding: 3rem 3rem 0 0;
   box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -23,7 +19,6 @@
 .pattern-dots {
   background-image: radial-gradient(currentColor 1px, transparent 1px);
   background-size: calc(10 * 1px) calc(10 * 1px);
-  height: 100%;
   width: 100%;
   z-index: -1;
   overflow: hidden;

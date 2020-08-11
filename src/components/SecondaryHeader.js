@@ -30,12 +30,6 @@ const SecondaryHeader = ({
       <div className="col-lg-5 mx-auto my-auto text-center">
         <h1 className="SecondaryHeader--Title">{title}</h1>
         <h2 className="SecondaryHeader--Subtitle">{subtitle}</h2>
-        <div>
-          <button className="Button Button--Solid">Let's Talk</button>
-          <button className="Button Button--Outline my-auto">
-            Watch Video <Play size="1rem" />
-          </button>
-        </div>
       </div>
     </div>
   )

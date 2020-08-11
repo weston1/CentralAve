@@ -143,7 +143,7 @@
     animation: 0.3s ease-out;
     margin: 0.5rem;
     padding: 1.5rem;
-    background: var(--primary) !important;
+    background: white;
     border-radius: 5px !important;
     transition: ease all 0.3s;
     z-index: 9999;

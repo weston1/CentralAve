@@ -1,5 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { Fade } from 'react-awesome-reveal'
+
 import {
   Check,
   ChevronLeft,
@@ -41,31 +43,33 @@ export const HomePageTemplate = ({
     <section className="section">
       <div className="container row">
         <div className="col-lg-8 col-12 my-auto mx-auto text-center">
-          <Content source={section1} />
+          <Fade>
+            <Content source={section1} />
+          </Fade>
         </div>
       </div>
     </section>
 
     <section className="section">
       <div className="row">
-        <div className="container col-lg-4 col-6 mx-auto order-sm-0 my-auto">
+        <div className="container col-lg-6 col-6 mx-auto order-sm-0 my-auto">
           <img
-            src="https://images.unsplash.com/photo-1593829427707-929b84de3774?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80"
-            className="img-fluid imgFeature"
-            max-width="200px"
+            src="../images/iphone.png"
+            className="img-fluid imgFeature bg-dark"
             alt="St Pete Web Development"
           />
-          <div className="pattern-dots py-5 my-2"></div>
         </div>
         <div className="container col-lg-5 col-6 my-auto mx-auto order-sm-2">
-          <Content source={section2} />
-          <Link
-            to="/services"
-            alt="Central Ave Web Services"
-            className="Button Button--Outline"
-          >
-            Our Digital Services
-          </Link>
+          <Fade>
+            <Content source={section2} />
+            <Link
+              to="/services"
+              alt="Central Ave Web Services"
+              className="Button Button--Outline"
+            >
+              Our Digital Services
+            </Link>
+          </Fade>
         </div>
       </div>
     </section>

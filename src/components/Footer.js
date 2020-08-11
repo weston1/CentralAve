@@ -20,10 +20,10 @@ export default () => (
               <Link to="/services/">Services</Link>
             </li>
             <li>
-              <Link to="/services/">Work</Link>
+              <Link to="/services/">Featured Projects</Link>
             </li>
             <li>
-              <Link to="/contact/">Contact</Link>
+              <Link to="/contact/">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -33,13 +33,13 @@ export default () => (
               <h5>Serviecs</h5>
             </li>
             <li>
-              <Link to="/services/">SEO</Link>
+              <Link to="/contact/">Web Design</Link>
             </li>
             <li>
               <Link to="/services/">Development</Link>
             </li>
             <li>
-              <Link to="/contact/">Consultation</Link>
+              <Link to="/services/">SEO</Link>
             </li>
           </ul>
         </div>
@@ -50,10 +50,10 @@ export default () => (
               <h5>Contact</h5>
             </li>
             <li>
-              <Link to="###">hello@centralave.com</Link>
+              <Link to="###">hello@centralavemarketing.com</Link>
             </li>
             <li>
-              <Link to="/blog/">20th St. &amp; Central Ave. St Pete</Link>
+              <Link to="/blog/">20th St. &amp; Central Ave. St&nbsp;Pete</Link>
             </li>
           </ul>
         </div>

@@ -99,6 +99,14 @@ body.dark-mode .Input--Search {
 body.dark-mode .pattern-dots {
   background-image: radial-gradient(--primary 1px, transparent 1px);
 }
+.pattern-dots-img {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: calc(10 * 1px) calc(10 * 1px);
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  transform: translate(30px, -30px);
+}
 
 a {
   color: var(--primary);
@@ -1288,27 +1296,30 @@ ul {
 
 /* Buttons */
 .Button {
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
+  outline: none;
+  display: inline-flex;
+  overflow: hidden;
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  font-size: 1.4rem;
-  font-family: var(--font-primary);
-  outline: none;
-  display: inline-block;
-  padding: 1.7rem 3rem;
-  margin: 0.25rem 1rem 0.25rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding: 2vh 6vw;
+  margin: 0.25vh 1vw 0.25vh 0;
+
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .Button--Solid {
   background: var(--secondary);
+  white-space: nowrap;
   color: white;
   border: solid 2px var(--secondary);
   border-radius: 50px;
-  max-width: 200px;
 }
 .Button--Solid:hover,
 .Button--Solid:focus {

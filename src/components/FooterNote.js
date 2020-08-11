@@ -8,11 +8,19 @@ import FormMini from '../components/FormMini'
 const FooterNote = ({ title }) => {
   return (
     <section className="FooterNote">
+      <div class="Footer--circles">
+        <div class="Footer--circle"></div>
+        <div class="Footer--circle js-rellax" data-rellax-speed="1"></div>
+        <div class="Footer--circle js-rellax" data-rellax-speed="2"></div>
+        <div class="Footer--circle js-rellax" data-rellax-speed=".3"></div>
+        <div class="Footer--circle js-rellax" data-rellax-speed="2"></div>
+        <div class="Footer--circle js-rellax" data-rellax-speed="1"></div>
+      </div>
       <div className="FooterNote-Container mx-auto">
         <div className="container">
           <div className="row mx-auto text-center">
             <div className="col-lg-6 taLeft my-auto">
-              <h4>Let's grab coffee 🚀</h4>
+              <h3>Let's grab coffee 🚀</h3>
               <p>
                 We would love to hear more about your next venture, idea or
                 future project.

@@ -30,7 +30,7 @@ export default ({
         aria-label="Message Input"
         className="Form--Input Form--InputText"
         placeholder="Message"
-        rows="2"
+        rows="5"
         required
       />
       <span>Message</span>
@@ -40,7 +40,7 @@ export default ({
     <input type="hidden" name="form-name" value={name} />
     <input
       aria-label="Submit Button"
-      className="Button--Nav Form--SubmitButton"
+      className="Button Button--Nav Form--SubmitButton"
       type="submit"
       value="Send it!"
     />

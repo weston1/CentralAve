@@ -22,12 +22,7 @@ export const ServicesPageTemplate = ({
   videoTitle
 }) => (
   <main className="ServicesPage">
-    <SecondaryHeader title={title} subtitle={subtitle} />
-    <section className="BackgroundVideo-section section container imgFeature">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
-    </section>
+    <SecondaryHeader large title={title} subtitle={subtitle} />
 
     <section className="section thick">
       <div className="container row">
@@ -51,6 +46,12 @@ export const ServicesPageTemplate = ({
           />
         </div>
       </div>
+    </section>
+
+    <section className="BackgroundVideo-section section container imgFeature">
+      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
+        {video && <source src={video} type="video/mp4" />}
+      </BackgroundVideo>
     </section>
 
     <section className="section">
