@@ -42,7 +42,7 @@ const MainHeader = ({
         <h1 className="MainHeader--Title">{title}</h1>
         <h2 className="MainHeader--Subtitle">{subtitle}</h2>
         <div className="row">
-          <Fade>
+          <Fade cascade={true}>
             <Link
               to="/contact/"
               className="Button Button--Solid"
@@ -50,8 +50,6 @@ const MainHeader = ({
             >
               Let's Talk
             </Link>
-          </Fade>
-          <Fade delay={500}>
             <Link
               to="/services/"
               className="Button Button--Outline my-auto"

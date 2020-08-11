@@ -165,6 +165,9 @@ export const HomePageTemplate = ({
         </h3>
       </div>
 
+      <Fade cascade={true}>
+        <FeatureArray images={featureArray} />
+      </Fade>
       <div className="container row mx-auto">
         <div className="col-lg-3 col-11 mx-auto FeatureCard">
           <Search size="40px" />

@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'gatsby'
 
-import { Instagram, Globe, Mail, Facebook } from 'react-feather'
+import { Instagram, Globe, Mail, Facebook, Twitter } from 'react-feather'
 
 export default () => (
   <div>
@@ -72,28 +72,20 @@ export default () => (
 
         <div className="container col-lg-6 text-center">
           <a
-            href="https://instagram.com/centralavemarketing"
-            alt="Github"
+            href="https://twitter.com/centralavem"
+            alt="Central Ave Marketing Twitter"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Instagram size="3rem" className="footer-li p-2" />
+            <Twitter size="3rem" className="footer-li p-2" />
           </a>
           <a
             href="https://facebook.com/centralavemarketing"
-            alt="Github"
+            alt="Central Ave Marketing Facebook"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Facebook size="3rem" className="footer-li p-2" />
-          </a>
-          <a
-            href="https://coastal-division.com"
-            alt="Coastal Division LLC"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Globe size="3rem" className="footer-li p-2" />
           </a>
           <a
             href=""
