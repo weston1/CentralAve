@@ -62,6 +62,10 @@ export default ({ children, meta, title }) => {
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
                 rel="stylesheet"
               />
+              <script
+                src="//code.tidio.co/pluoetqfte24pcialwix6p0guhudci23.js"
+                async
+              ></script>
               {/* Add font link tags here */}
             </Helmet>
 
