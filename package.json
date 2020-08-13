@@ -41,6 +41,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-awesome-reveal": "^3.0.0",
+    "react-calendly": "^1.1.0",
     "react-dom": "^16.11.0",
     "react-feather": "^2.0.3",
     "react-helmet": "^5.2.1",

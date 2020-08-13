@@ -11036,6 +11036,11 @@ react-awesome-reveal@^3.0.0:
     react-intersection-observer "^8.26.2"
     react-is "^16.13.1"
 
+react-calendly@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-1.1.0.tgz#4c1f045f4503d2181aecb94df98be2f9a4de602a"
+  integrity sha512-+YPvDIwMJ+LjYc+5b7Js0WJFi10eI/gufLqkHIeMRkLBvRoiDqyITygPXaXqV5E0TLbU51S6BGq3Sq/zvPgT3g==
+
 react-datetime@^2.16.3:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.16.3.tgz#7f9ac7d4014a939c11c761d0c22d1fb506cb505e"

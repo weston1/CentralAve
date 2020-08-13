@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Fade } from 'react-awesome-reveal'
+import { openPopupWidget } from 'react-calendly'
 
 import {
   Check,
@@ -20,6 +21,9 @@ import FeatureArray from '../components/FeatureArray'
 import FooterNote from '../components/FooterNote'
 
 // Export Template for use in CMS preview
+const CustomButton = ({ url, prefill, pageSettings, utm }) => {
+  const onClick = () => openPopupWidget({ url, prefill, pageSettings, utm })
+}
 export const HomePageTemplate = ({
   title,
   subtitle,

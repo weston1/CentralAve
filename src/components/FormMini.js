@@ -8,41 +8,55 @@ export default ({
   action = ''
 }) => (
   <form
-    className="Form mx-auto"
     name={name}
-    action={action}
+    subject={subject}
+    method="post"
     data-netlify="true"
-    data-netlify-honeypot="_gotcha"
+    data-netlify-honeypot="bot-field"
+    className="Form mx-auto"
   >
-    <label aria-label="Email Input" className="Form--Label">
-      <input
-        aria-label="Email Input"
-        className="Form--Input Form--InputText"
-        type="email"
-        placeholder="Email"
-        name="emailAddress"
-        required
-      />
-      <span>Email</span>
-    </label>
-    <label aria-label="Message Input" className="Form--Label">
-      <textarea
-        aria-label="Message Input"
-        className="Form--Input Form--InputText"
-        placeholder="Message"
-        rows="5"
-        required
-      />
-      <span>Message</span>
-    </label>
-    <input type="text" name="_gotcha" style={{ display: 'none' }} />
-    {!!subject && <input type="hidden" name="subject" value={subject} />}
-    <input type="hidden" name="form-name" value={name} />
-    <input
-      aria-label="Submit Button"
-      className="Button Button--Nav Form--SubmitButton"
-      type="submit"
-      value="Send it!"
-    />
+    {/* You still need to add the hidden input with the form name to your JSX form */}
+    <input type="hidden" name="form-name" value="contact" />
+    <div className="Form--Group py-3">
+      <label className="Form--Label">
+        <input
+          className="Form--Input Form--InputText"
+          type="text"
+          placeholder="Firstname"
+          name="firstname"
+          required
+        />
+        <span>Name</span>
+      </label>
+    </div>
+    <div className="py-3">
+      <label className="Form--Label">
+        <input
+          className="Form--Input Form--InputText"
+          type="email"
+          placeholder="Email"
+          name="emailAddress"
+          required
+        />
+        <span>Email</span>
+      </label>
+    </div>
+    <div className="py-3">
+      <label className="Form--Label">
+        <textarea
+          className="Form--Input Form--InputText"
+          placeholder="Message"
+          name="message"
+          rows="5"
+          required
+        />
+        <span>Message</span>
+      </label>
+    </div>
+    <p>
+      <button type="submit" className="Button Button--Nav Form--SubmitButton">
+        Send it!
+      </button>
+    </p>
   </form>
 )
