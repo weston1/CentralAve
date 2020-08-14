@@ -12,7 +12,7 @@ import {
   AtSign,
   Monitor,
   Feather,
-  ArrowRight
+  ArrowRight,
 } from 'react-feather'
 
 import MainHeader from '../components/MainHeader'
@@ -35,7 +35,7 @@ export const HomePageTemplate = ({
   section2,
   section3,
   featureArray,
-  body
+  body,
 }) => (
   <main className="Home">
     <motion.div

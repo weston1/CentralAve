@@ -35,7 +35,7 @@ const FooterNote = ({ title }) => {
 }
 
 FooterNote.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 export default FooterNote
