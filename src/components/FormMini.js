@@ -17,7 +17,7 @@ export default ({
   >
     {/* You still need to add the hidden input with the form name to your JSX form */}
     <input type="hidden" name="form-name" value="contact" />
-    <div className="Form--Group py-3">
+    <div className=" ">
       <label className="Form--Label">
         <input
           className="Form--Input Form--InputText"
@@ -29,7 +29,7 @@ export default ({
         <span>Name</span>
       </label>
     </div>
-    <div className="py-3">
+    <div className=" ">
       <label className="Form--Label">
         <input
           className="Form--Input Form--InputText"
@@ -41,7 +41,7 @@ export default ({
         <span>Email</span>
       </label>
     </div>
-    <div className="py-3">
+    <div className="">
       <label className="Form--Label">
         <textarea
           className="Form--Input Form--InputText"
@@ -54,7 +54,7 @@ export default ({
       </label>
     </div>
     <p>
-      <button type="submit" className="Button Button--Nav Form--SubmitButton">
+      <button type="submit" className="Button Button--Solid Form--SubmitButton">
         Send it!
       </button>
     </p>

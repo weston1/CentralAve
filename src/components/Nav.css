@@ -157,7 +157,7 @@
   }
   .Nav--Mobile {
     display: block;
-    color: white !important;
+    color: #000 !important;
     fill: white !important;
     margin: 0 auto;
   }
@@ -172,7 +172,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000;
+    background-color: var(--lightGrey);
     background-attachment: fixed;
     background-size: cover;
     animation: Nav--Links 0.2s ease;
@@ -181,10 +181,10 @@
     padding: 0.5rem 1rem;
     display: block;
     font-weight: 800;
-    font-size: 12px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 1;
     transition: all ease 0.2s;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     letter-spacing: 2px;
     border-bottom: 2px solid;

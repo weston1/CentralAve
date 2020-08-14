@@ -25,7 +25,7 @@ export default class FeatureArray extends Component {
     loaded: false,
     isOpen: false,
     sliderImages: [],
-    index: 0
+    index: 0,
   }
 
   isOpen(isOpen, index) {
@@ -43,10 +43,10 @@ export default class FeatureArray extends Component {
             src: img.image,
             title: img.title,
             w: result.width,
-            h: result.height
+            h: result.height,
           }
           this.setState({
-            sliderImages: newImagesArr
+            sliderImages: newImagesArr,
           })
           return true
         },
@@ -108,5 +108,5 @@ export default class FeatureArray extends Component {
 }
 
 FeatureArray.propTypes = {
-  images: PropTypes.array.isRequired
+  images: PropTypes.array.isRequired,
 }

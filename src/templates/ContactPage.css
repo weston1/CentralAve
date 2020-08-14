@@ -48,6 +48,9 @@
   margin-right: 1.5rem;
   color: var(--primary);
 }
+.Form--SubmitButton {
+  margin: 0 auto;
+}
 
 @media (max-width: 600px) {
   .desktop-only {

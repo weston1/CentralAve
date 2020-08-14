@@ -2,16 +2,21 @@ import React from 'react'
 import './Footer.css'
 import { Link } from 'gatsby'
 
-import { Instagram, Globe, Mail, Facebook, Twitter } from 'react-feather'
+import { Mail, Facebook, Twitter } from 'react-feather'
 
 export default () => (
   <div>
     <footer className="footer">
       <div className="container row mx-auto">
-        <div className="col-lg-3 col-6 mx-auto text-center">
-          <img src="../images/CentralAve-LogoFull.svg" />
+        <div className="col-lg-3 col-md-4 col-6 mx-auto text-center">
+          <Link to="/" alt="Central Ave Marketing">
+            <img
+              src="../images/CentralAve-LogoFull.svg"
+              alt="Central Ave Marketing"
+            />
+          </Link>
         </div>
-        <div className="col-lg-2 col-6 mx-auto text-center">
+        <div className="col-lg-2 col-md-4 col-6 mx-auto text-center">
           <ul>
             <li>
               <h5>Pages</h5>
@@ -27,7 +32,7 @@ export default () => (
             </li>
           </ul>
         </div>
-        <div className="col-lg-2 col-6 mx-auto text-center">
+        <div className="col-lg-2 col-md-4 col-6 mx-auto text-center">
           <ul>
             <li>
               <h5>Serviecs</h5>
@@ -44,16 +49,15 @@ export default () => (
           </ul>
         </div>
 
-        <div className="col-lg-2 col-6 mx-auto text-center">
+        <div className="col-lg-2 col-md-4 col-6 mx-auto text-center">
           <ul>
             <li>
               <h5>Contact</h5>
             </li>
             <li>
-              <Link to="###">hello@centralavemarketing.com</Link>
-            </li>
-            <li>
-              <Link to="/blog/">20th St. &amp; Central Ave. St&nbsp;Pete</Link>
+              <Link to="/contact/">
+                20th St. &amp; Central Ave. St&nbsp;Pete
+              </Link>
             </li>
           </ul>
         </div>

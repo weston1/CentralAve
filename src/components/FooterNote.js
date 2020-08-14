@@ -18,17 +18,15 @@ const FooterNote = ({ title }) => {
       </div>
       <div className="FooterNote-Container mx-auto">
         <div className="container">
-          <div className="row mx-auto text-center">
-            <div className="col-lg-6 taLeft my-auto">
+          <div className="row mx-auto">
+            <div className="col-lg-6 col-md-6 col-12 taLeft my-auto">
               <h3>Let's grab coffee 🚀</h3>
               <p>
                 We would love to hear more about your next venture, idea or
                 future project.
               </p>
             </div>
-            <div className="ml-auto col-lg-5">
-              <FormMini />
-            </div>
+            <FormMini className="col-lg-5 col-md-6 col-12" />
           </div>
         </div>
       </div>

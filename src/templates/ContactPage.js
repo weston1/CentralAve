@@ -25,7 +25,7 @@ export const ContactPageTemplate = ({ section1, body }) => (
               >
                 {/* You still need to add the hidden input with the form name to your JSX form */}
                 <input type="hidden" name="form-name" value="contact" />
-                <div className="Form--Group py-3">
+                <div className="py-3">
                   <label className="Form--Label">
                     <input
                       className="Form--Input Form--InputText"
@@ -79,7 +79,10 @@ export const ContactPageTemplate = ({ section1, body }) => (
                   </label>
                 </div>
                 <p>
-                  <button type="submit" className="Button Form--SubmitButton">
+                  <button
+                    type="submit"
+                    className="Button Button--Solid Form--SubmitButton"
+                  >
                     Send
                   </button>
                 </p>

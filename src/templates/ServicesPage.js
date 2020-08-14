@@ -7,7 +7,7 @@ import {
   Monitor,
   Search,
   ArrowRight,
-  Feather
+  Feather,
 } from 'react-feather'
 import { Fade } from 'react-awesome-reveal'
 
@@ -31,7 +31,7 @@ export const ServicesPageTemplate = ({
   video,
   videoPoster,
   videoTitle,
-  featureArray
+  featureArray,
 }) => (
   <main className="ServicesPage">
     <SecondaryHeader large title={title} subtitle={subtitle} />

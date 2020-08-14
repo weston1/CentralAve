@@ -13,7 +13,7 @@ const SecondaryHeader = ({
   backgroundImage,
   large,
   left,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' SecondaryHeader-left'
   return (
@@ -37,7 +37,7 @@ const SecondaryHeader = ({
 
 SecondaryHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
 }
 
 export default SecondaryHeader

@@ -57,5 +57,5 @@ featureArray:
     title: Wordpress
 meta:
   description: A boutique marketing agency partnering with local businesses in the St. Petersburg & Tampa areas to grow their businesses using proven Marketing&nbsp;strategies.
-  title: Central Ave Marketing
+  title: St. Pete Digital Marketing
 ---
