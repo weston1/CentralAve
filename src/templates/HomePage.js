@@ -1,19 +1,10 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { Fade } from 'react-awesome-reveal'
+import { Fade, Zoom } from 'react-awesome-reveal'
 import { motion } from 'framer-motion'
 
 import { openPopupWidget } from 'react-calendly'
-
-import {
-  Check,
-  ChevronLeft,
-  Search,
-  AtSign,
-  Monitor,
-  Feather,
-  ArrowRight,
-} from 'react-feather'
+import { Search, Feather, ArrowRight } from 'react-feather'
 
 import MainHeader from '../components/MainHeader'
 import Content from '../components/Content'
@@ -35,7 +26,7 @@ export const HomePageTemplate = ({
   section2,
   section3,
   featureArray,
-  body,
+  body
 }) => (
   <main className="Home">
     <motion.div

@@ -2,18 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Image from './Image'
-import Content from './Content'
 import './SecondaryHeader.css'
-import { Play } from 'react-feather'
 
 const SecondaryHeader = ({
   title,
   subtitle,
-  logo,
   backgroundImage,
   large,
-  left,
-  className = '',
+  className = ''
 }) => {
   if (large) className += ' SecondaryHeader-left'
   return (
@@ -37,7 +33,7 @@ const SecondaryHeader = ({
 
 SecondaryHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string,
+  subtitle: PropTypes.string
 }
 
 export default SecondaryHeader

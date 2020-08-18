@@ -5,7 +5,6 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import './ContactPage.css'
 import '../components/Form.css'
-import FormSimple from '../components/FormSimple'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({ section1, body }) => (

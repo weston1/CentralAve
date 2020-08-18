@@ -4,9 +4,7 @@ import { Link } from 'gatsby'
 import { Fade } from 'react-awesome-reveal'
 
 import Image from './Image'
-import Content from './Content'
 import './MainHeader.css'
-import { Play } from 'react-feather'
 
 const MainHeader = ({
   title,
@@ -14,8 +12,7 @@ const MainHeader = ({
   logo,
   backgroundImage,
   large,
-  left,
-  className = '',
+  className = ''
 }) => {
   if (large) className += ' MainHeader-left'
   return (
@@ -72,7 +69,7 @@ const MainHeader = ({
 
 MainHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string,
+  subtitle: PropTypes.string
 }
 
 export default MainHeader

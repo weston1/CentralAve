@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Transition } from 'react-transition-group'
-import { Fade, Bounce, Slide } from 'react-awesome-reveal'
+import { Fade, Bounce } from 'react-awesome-reveal'
 
 import Image from './Image'
 import Content from './Content'
@@ -12,7 +12,7 @@ const PageHeader = ({
   subtitle,
   backgroundImage,
   large,
-  className = '',
+  className = ''
 }) => {
   if (large) className += ' PageHeader-large'
   return (
@@ -56,7 +56,7 @@ const PageHeader = ({
 
 PageHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string,
+  subtitle: PropTypes.string
 }
 
 export default PageHeader

@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './FooterNote.css'
-import { Link } from 'gatsby'
 import FormMini from '../components/FormMini'
 
 const FooterNote = ({ title }) => {
@@ -20,7 +19,12 @@ const FooterNote = ({ title }) => {
         <div className="container">
           <div className="row mx-auto">
             <div className="col-lg-6 col-md-6 col-12 taLeft my-auto">
-              <h3>Let's grab coffee 🚀</h3>
+              <h3>
+                Let's grab coffee{' '}
+                <span role="img" aria-label="rocket">
+                  🚀
+                </span>
+              </h3>
               <p>
                 We would love to hear more about your next venture, idea or
                 future project.
@@ -35,7 +39,7 @@ const FooterNote = ({ title }) => {
 }
 
 FooterNote.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string
 }
 
 export default FooterNote

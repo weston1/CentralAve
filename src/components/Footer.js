@@ -91,14 +91,9 @@ export default () => (
           >
             <Facebook size="3rem" className="footer-li p-2" />
           </a>
-          <a
-            href=""
-            alt="Contact Central Ave Marketing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to="/contact/" alt="Contact Central Ave Marketing">
             <Mail size="3rem" className="footer-li p-2" />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
