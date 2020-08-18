@@ -86,7 +86,7 @@ export const HomePageTemplate = ({
           <div className="col-lg-6 col-10 mx-auto order-sm-0 my-auto">
             <Slide Direction="top">
               <img
-                src="../images/iphones.jpg"
+                src="../images/iphone-long.jpg"
                 className="img-fluid imgFeature"
                 alt="St Pete Web Development"
               />

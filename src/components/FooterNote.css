@@ -65,8 +65,8 @@
   bottom: 0 !important;
   font-size: 12px;
   background: whitesmoke;
-  background-image: url('https://images.ctfassets.net/3c91hj4vxp4x/1G9KpZGnWwZsyzh5FKJcee/a1db1398843ed455760e7a03a5a0a5ef/phone-cta-module-devices.png?w=2000&h=2274&q=90'); /* fallback */
-  background-image: url('https://images.ctfassets.net/3c91hj4vxp4x/1G9KpZGnWwZsyzh5FKJcee/a1db1398843ed455760e7a03a5a0a5ef/phone-cta-module-devices.png?w=2000&h=2274&q=90');
+  background-image: url('../../static/images/iphones.jpg'); /* fallback */
+  background-image: url('../../static/images/iphones.jpg');
   background-position: 90% 100%;
   background-repeat: no-repeat;
   background-size: 30% 80%;
