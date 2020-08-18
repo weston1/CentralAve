@@ -83,14 +83,7 @@ export default () => (
           >
             <Twitter size="3rem" className="footer-li p-2" />
           </a>
-          <a
-            href="https://facebook.com/centralavemarketing"
-            alt="Central Ave Marketing Facebook"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook size="3rem" className="footer-li p-2" />
-          </a>
+
           <Link to="/contact/" alt="Contact Central Ave Marketing">
             <Mail size="3rem" className="footer-li p-2" />
           </Link>

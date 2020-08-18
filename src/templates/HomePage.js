@@ -1,22 +1,17 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { Fade, Zoom } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 import { motion } from 'framer-motion'
-
-import { openPopupWidget } from 'react-calendly'
 import { Search, Feather, ArrowRight } from 'react-feather'
 
 import MainHeader from '../components/MainHeader'
 import Content from '../components/Content'
 import Image from '../components/Image'
 import Layout from '../components/Layout'
-import FeatureArray from '../components/FeatureArray'
+import Calendly from '../components/Calendly'
+
 import FooterNote from '../components/FooterNote'
 
-// Export Template for use in CMS preview
-const CustomButton = ({ url, prefill, pageSettings, utm }) => {
-  const onClick = () => openPopupWidget({ url, prefill, pageSettings, utm })
-}
 export const HomePageTemplate = ({
   title,
   subtitle,
@@ -24,9 +19,7 @@ export const HomePageTemplate = ({
   logo,
   section1,
   section2,
-  section3,
-  featureArray,
-  body
+  section3
 }) => (
   <main className="Home">
     <motion.div
@@ -78,14 +71,7 @@ export const HomePageTemplate = ({
 
       <section className="section">
         <div className="row">
-          <div className="container col-lg-6 col-10 mx-auto order-sm-0 my-auto">
-            <img
-              src="../images/iphone.png"
-              className="img-fluid imgFeature bg-dark"
-              alt="St Pete Web Development"
-            />
-          </div>
-          <div className="container col-lg-5 col-10 my-auto mx-auto order-sm-2">
+          <div className="container col-lg-5 col-10 my-auto mx-auto">
             <Fade>
               <Content source={section3} />
               <Link
@@ -97,6 +83,13 @@ export const HomePageTemplate = ({
               </Link>
             </Fade>
           </div>
+          <div className="container col-lg-6 col-10 mx-auto order-sm-0 my-auto">
+            <img
+              src="../images/iphone.png"
+              className="img-fluid imgFeature bg-dark"
+              alt="St Pete Web Development"
+            />
+          </div>
         </div>
       </section>
 
@@ -107,56 +100,48 @@ export const HomePageTemplate = ({
             ease.
           </h3>
         </div>
-
-        <Fade cascade={true}>
-          <FeatureArray images={featureArray} />
-        </Fade>
         <div className="container row mx-auto">
-          <Zoom>
-            <div className="col-lg-3 col-11 mx-auto FeatureCard">
-              <Search size="40px" />
-              <h5>Hello World</h5>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-              </p>
-              <Link to="/blog/" className="my-auto">
-                <h5>
-                  Resources <ArrowRight size="2rem" />
-                </h5>
-              </Link>
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className="col-lg-3 col-11 mx-auto FeatureCard">
-              <Feather size="40px" />
-              <h5>Hello World</h5>
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-              <Link to="/blog/" className="my-auto">
-                <h5>
-                  Resources <ArrowRight size="2rem" />
-                </h5>
-              </Link>
-            </div>
-          </Zoom>
-          <Zoom>
-            <div className="col-lg-3 col-11 mx-auto FeatureCard">
-              <Image src={logo} className="icon" />
-              <h5>Hello World</h5>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum pariatur.
-              </p>
-              <Link to="/blog/" className="my-auto">
-                <h5>
-                  Resources <ArrowRight size="2rem" />
-                </h5>
-              </Link>
-            </div>
-          </Zoom>
+          <div className="col-lg-3 col-md-4 col-11 mx-auto FeatureCard">
+            <Search size="40px" />
+            <h5>Hello World</h5>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <Link to="/blog/" className="my-auto">
+              <h5>
+                Resources <ArrowRight size="2rem" />
+              </h5>
+            </Link>
+          </div>
+
+          <div className="col-lg-3 col-md-4 col-11 mx-auto FeatureCard">
+            <Feather size="40px" />
+            <h5>Hello World</h5>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+            <Link to="/blog/" className="my-auto">
+              <h5>
+                Resources <ArrowRight size="2rem" />
+              </h5>
+            </Link>
+          </div>
+
+          <div className="col-lg-3 col-md-4 col-11 mx-auto FeatureCard">
+            <Image src={logo} className="icon" />
+            <h5>Hello World</h5>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum pariatur.
+            </p>
+            <Link to="/blog/" className="my-auto">
+              <h5>
+                Resources <ArrowRight size="2rem" />
+              </h5>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -184,7 +169,6 @@ export const pageQuery = graphql`
   query HomePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
-      ...featureArray
       html
       frontmatter {
         title

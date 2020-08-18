@@ -1,10 +1,10 @@
 ---
 template: HomePage
 slug: ''
-title: St. Pete & Tampa Digital Marketing Services
+title: St. Pete Digital Marketing Services
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
 logo: '../images/clay-ipad.png'
-subtitle: Central Ave Marketing transforms your digital marketing process - leading to better products, faster.
+subtitle: We partner proven marketing strategies with local businesses to grow their customer base. Central Ave Marketing offers fast customized web development, digital marketing and SEO solutions.
 section1: >-
   ## The Heart of St. Pete is Local
 
@@ -17,45 +17,7 @@ section3: >-
   ## Driven By Discovery// Why We Do It
 
   From learning new things, to understanding why something works the way it does, to stumbling upon a local gem in a new city - the excitement of discovery keeps us hungry for more. With more than 10 years of combined experience in Marketing and Technology and more than a few thousands miles clocked in travel  - we’re eager to help local businesses get discovered online.
-featureArray:
-  - alt: ReactJS Developer
-    image: '../images/svg/react.svg'
-    icon: Search
-    title: SEO
-  - alt: Gatsby Static Site Developer
-    image: '../images/svg/gatsby.svg'
-    title: GatsbyJS
-  - alt: HTML EXPERT
-    image: '../images/svg/html5.svg'
-    title: HTML5
-  - alt: GraphQL
-    image: '../images/svg/graphql.svg'
-    title: GraphQL
-  - alt: VUE Developer
-    image: '../images/svg/vue-9.svg'
-    title: VUE
-  - alt: Expert Shopify Developer
-    image: '../images/svg/shopify.svg'
-    title: Shopify
-  - alt: Swift Developer
-    image: '../images/svg/swift-15.svg'
-    title: Swift
-  - alt: Github
-    image: '../images/svg/github-1.svg'
-    title: Github
-  - alt: Adobe Illustrator
-    image: '../images/svg/adobe-illustrator-cc.svg'
-    title: Adobe Illustrator
-  - alt: Photoshop Master
-    image: '../images/svg/photoshop-cc.svg'
-    title: Photoshop
-  - alt: Invision
-    image: '../images/svg/invision.svg'
-    title: Invision
-  - alt: Wordpress
-    image: '../images/svg/wp.svg'
-    title: Wordpress
 meta:
-  description: A boutique marketing agency partnering with local businesses in the St. Petersburg & Tampa areas to grow their businesses using proven Marketing&nbsp;strategies.
+  description: A boutique marketing agency partnering with local businesses in the St. Petersburg & Tampa area. We use proven marketing&nbsp;strategies to grow their businesses.
   title: St. Pete Digital Marketing
 ---

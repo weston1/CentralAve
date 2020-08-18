@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './FooterNote.css'
-import FormMini from '../components/FormMini'
+import FormMini from './FormMini'
+import Calendly from './Calendly'
 
 const FooterNote = ({ title }) => {
   return (
@@ -30,7 +31,7 @@ const FooterNote = ({ title }) => {
                 future project.
               </p>
             </div>
-            <FormMini className="col-lg-5 col-md-6 col-12" />
+            <Calendly />
           </div>
         </div>
       </div>
