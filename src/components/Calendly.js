@@ -7,8 +7,8 @@ const Calendly = ({ url, prefill, pageSettings, utm }) => {
 
   return (
     <div className="col-lg-4 my-auto">
-      <button className="Button Button--Solid" onClick={onClick}>
-        Schedule a time to meet
+      <button className="Button Button--Outline" onClick={onClick}>
+        Schedule a time
       </button>
     </div>
   )

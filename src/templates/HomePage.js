@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { Fade } from 'react-awesome-reveal'
+import { Fade, Slide } from 'react-awesome-reveal'
 import { motion } from 'framer-motion'
 import { Search, Feather, ArrowRight } from 'react-feather'
 
@@ -49,7 +49,7 @@ export const HomePageTemplate = ({
         <div className="row">
           <div className="container col-lg-6 col-10 mx-auto order-sm-0 my-auto">
             <img
-              src="../images/iphone.png"
+              src="../images/macbook-long-scroll.jpg"
               className="img-fluid imgFeature bg-dark"
               alt="St Pete Web Development"
             />
@@ -62,7 +62,7 @@ export const HomePageTemplate = ({
                 alt="Central Ave Web Services"
                 className="Button Button--Outline"
               >
-                Our Digital Services
+                Free consultation
               </Link>
             </Fade>
           </div>
@@ -83,12 +83,14 @@ export const HomePageTemplate = ({
               </Link>
             </Fade>
           </div>
-          <div className="container col-lg-6 col-10 mx-auto order-sm-0 my-auto">
-            <img
-              src="../images/iphone.png"
-              className="img-fluid imgFeature bg-dark"
-              alt="St Pete Web Development"
-            />
+          <div className="col-lg-6 col-10 mx-auto order-sm-0 my-auto">
+            <Slide Direction="top">
+              <img
+                src="../images/iphones.jpg"
+                className="img-fluid imgFeature"
+                alt="St Pete Web Development"
+              />
+            </Slide>
           </div>
         </div>
       </section>

@@ -379,7 +379,40 @@ ul {
 .container.skinnier {
   max-width: 555px;
 }
-
+.Feat--Gradient {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #dadfe7;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  position: absolute;
+  border-radius: 24px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #1f4037; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #99f2c8,
+    #1f4037
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #99f2c8,
+    #1f4037
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center center;
+  animation: hue-rotate-jsx-1949430152 4s ease-in-out infinite;
+  animation-direction: alternate;
+}
 /* Bootstrap */
 .hidden {
   display: none !important;
@@ -1300,13 +1333,13 @@ ul {
   display: inline-flex;
   overflow: hidden;
   font-family: var(--font-primary);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 2vh 6vw;
+  padding: 2vh 4vw;
   margin: 1.5vh 0.75vw 1.5vh 0;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -1332,6 +1365,8 @@ ul {
   color: black;
   border: solid 2px var(--secondary);
   transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .Button--Outline:hover,
 .Button--Outline:focus {
