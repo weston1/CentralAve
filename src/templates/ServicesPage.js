@@ -43,6 +43,9 @@ export const ServicesPageTemplate = ({
       <section className="section thick bg-chill"></section>
       <section className="section thick">
         <div className="container row">
+          <div className="col-12 mx-auto text-center">
+            <h3>Central Ave Services</h3>
+          </div>
           <div className="col-lg-4 col-11 mx-auto">
             <div className="FeatureCard">
               <Search size="40px" />

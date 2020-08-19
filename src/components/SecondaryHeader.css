@@ -53,12 +53,19 @@
 
 @media (max-width: 600px) {
   .SecondaryHeader {
-    padding: 7rem 0;
+    padding: 5rem 0;
+    height: 70vh;
   }
   .SecondaryHeader-left {
-    padding: 13rem 0;
+    padding: 5rem 0;
   }
   .SecondaryHeader--BG {
     margin: 3rem 0 0 0;
+  }
+  .SecondaryHeader--Title {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
   }
 }

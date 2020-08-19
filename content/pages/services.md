@@ -13,7 +13,7 @@ projectArray:
 section1: >-
   ### Powerful results delivered through *experience*.
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  We drive big thinking, with local results. We support a wide variety of solutions and technology to help your meet your specific digital needs. Our experience allows your customers to find your business faster and easier.
 img0: '../images/svg/undraw_online_connection_6778.svg'
 img1: '../images/svg/shopify.svg'
 featureArray:

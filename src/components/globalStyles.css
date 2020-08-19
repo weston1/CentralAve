@@ -354,6 +354,7 @@ ul {
 .bg-chill {
   background: url('../../static/images/009.png');
   background-size: 100%;
+  height: 30vh;
 }
 .dark {
   background-color: var(--primary);

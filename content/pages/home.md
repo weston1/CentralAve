@@ -3,7 +3,7 @@ template: HomePage
 slug: ''
 title: St. Pete Digital Marketing Services
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-logo: '../images/clay-ipad.png'
+logo: '../images/ipad-masthead.png'
 subtitle: We partner proven marketing strategies with local businesses to grow their customer base. Central Ave Marketing offers fast customized web development, digital marketing and SEO solutions.
 section1: >-
   ### The Heart of St. Pete is Local
