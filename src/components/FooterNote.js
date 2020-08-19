@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Calendar } from 'react-feather'
 
 import './FooterNote.css'
 import FormMini from './FormMini'
@@ -19,13 +20,10 @@ const FooterNote = ({ title }) => {
       <div className="FooterNote-Container mx-auto">
         <div className="row mx-auto">
           <div className="col-lg-7 col-md-6 col-10 taLeft my-auto">
-            <h5>Find Out Why Small Busiensses Love Us</h5>
-            <h3>
-              Let's grab coffee&nbsp;
-              <span role="img" aria-label="rocket">
-                🚀
-              </span>
-            </h3>
+            <h5>
+              <Calendar />
+            </h5>
+            <h3>Let's grab coffee</h3>
             <p>
               We would love to hear more about your next venture, idea or future
               project. No strings attached.

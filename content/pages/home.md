@@ -16,7 +16,7 @@ section2: >-
 section3: >-
   ### Driven By Discovery
 
-  From learning new things, to understanding why something works the way it does, to stumbling upon a local gem in a new city - the excitement of discovery keeps us hungry for more. With more than 10 years of combined experience in Marketing and Technology and more than a few thousands miles clocked in travel  - we’re eager to help local businesses get discovered online.
+  From learning new things, to understanding why something works the way it does, to stumbling upon a local gem in a new city - the excitement of discovery keeps us hungry for more. With more than 10 years of combined experience in Marketing and Technology and more than a few thousands miles clocked in travel  - we’re eager to help local businesses **get discovered online**.
 meta:
   description: A boutique marketing agency partnering with local businesses in the St. Petersburg & Tampa area. We use proven marketing&nbsp;strategies to grow their businesses.
   title: St. Pete Digital Marketing

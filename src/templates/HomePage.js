@@ -8,9 +8,6 @@ import Layout from '../components/Layout'
 import MainHeader from '../components/MainHeader'
 import Content from '../components/Content'
 import Image from '../components/Image'
-import Logo from '../components/Logo'
-import Calendly from '../components/Calendly'
-
 import FooterNote from '../components/FooterNote'
 
 export const HomePageTemplate = ({
@@ -36,11 +33,11 @@ export const HomePageTemplate = ({
         backgroundImage={featuredImage}
       />
 
-      <section className="section">
+      <section className="section thick">
         <div className="container row">
           <div className="col-lg-8 col-12 my-auto mx-auto text-center">
             <Fade>
-              <div className="col-lg-6 mx-auto">
+              <div className="col-lg-4 col-4 mx-auto">
                 <img
                   src="../images/logo.svg"
                   className="img-fluid"
@@ -54,14 +51,16 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="section">
+      <section className="section thick">
         <div className="row">
           <div className="container col-lg-6 col-10 mx-auto order-sm-0 my-auto">
-            <img
-              src="../images/macbook-long-scroll.jpg"
-              className="img-fluid imgFeature bg-dark"
-              alt="St Pete Web Development"
-            />
+            <Slide direction="left">
+              <img
+                src="../images/macbook-long-scroll.jpg"
+                className="img-fluid imgFeature bg-dark"
+                alt="St Pete Web Development"
+              />
+            </Slide>
           </div>
           <div className="container col-lg-5 col-10 my-auto mx-auto order-sm-2">
             <Fade>
@@ -78,7 +77,7 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="section">
+      <section className="section thick">
         <div className="row">
           <div className="container col-lg-5 col-10 my-auto mx-auto">
             <Fade>
@@ -100,58 +99,6 @@ export const HomePageTemplate = ({
                 alt="St Pete Web Development"
               />
             </Slide>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="col-lg-6 mx-auto taCenter">
-          <h3>
-            A combination of tools to design and develop modern applications at
-            ease.
-          </h3>
-        </div>
-        <div className="container row mx-auto">
-          <div className="col-lg-3 col-md-4 col-11 mx-auto FeatureCard">
-            <Search size="40px" />
-            <h5>Hello World</h5>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <Link to="/blog/" className="my-auto">
-              <h5>
-                Resources <ArrowRight size="2rem" />
-              </h5>
-            </Link>
-          </div>
-
-          <div className="col-lg-3 col-md-4 col-11 mx-auto FeatureCard">
-            <Feather size="40px" />
-            <h5>Hello World</h5>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-            <Link to="/blog/" className="my-auto">
-              <h5>
-                Resources <ArrowRight size="2rem" />
-              </h5>
-            </Link>
-          </div>
-
-          <div className="col-lg-3 col-md-4 col-11 mx-auto FeatureCard">
-            <Image src={logo} className="icon" />
-            <h5>Hello World</h5>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum pariatur.
-            </p>
-            <Link to="/blog/" className="my-auto">
-              <h5>
-                Resources <ArrowRight size="2rem" />
-              </h5>
-            </Link>
           </div>
         </div>
       </section>

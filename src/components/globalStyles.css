@@ -171,7 +171,7 @@ h6 {
 }
 p {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2;
   font-family: var(--font-secondary);
 }
 span {
@@ -217,6 +217,7 @@ span {
   }
   p {
     font-size: 16px;
+    line-height: 1.7;
   }
 }
 
@@ -342,6 +343,17 @@ ul {
   margin-top: -20%;
   position: absolute;
   z-index: 0;
+}
+.bg-primary {
+  background: linear-gradient(90deg, #bdcec4, rgba(141, 134, 134, 0.4)),
+    url('../../static/images/009.png');
+}
+.bg-dark {
+  background: var(--secondary);
+}
+.bg-chill {
+  background: url('../../static/images/009.png');
+  background-size: 100%;
 }
 .dark {
   background-color: var(--primary);
@@ -1505,34 +1517,49 @@ ul {
   box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 /* Feature Card */
-
+.FeatureCard--Space {
+  padding: 1.5rem;
+}
 .FeatureCard {
   border-radius: 12px;
   border: 1px solid rgb(247, 248, 249);
   background-color: white;
   box-shadow: var(--boxShadow);
   box-sizing: border-box;
-  color: rgb(0, 0, 0);
+  color: var(--secondary);
   display: block;
-  font-family: var(--font-primary);
   font-size: 14px;
-  height: auto;
+  height: 93%;
   line-height: 24px;
-  margin: 1rem;
-  padding-bottom: 32px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 32px;
-  width: 368px;
+  margin: 0.5rem;
+  padding: 32px;
   -webkit-font-smoothing: antialiased;
+  transition: all 0.3s ease-in-out;
 }
-
+.FeatureCard-ImgBlock {
+  border-radius: 12px;
+  border: 1px solid rgb(247, 248, 249);
+  background: url('../../static/images/mangrove.jpg');
+  background-position: bottom center;
+  background-size: 100% auto;
+  box-shadow: var(--boxShadow);
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  height: 93%;
+  margin: 0.5rem;
+  overflow: hidden;
+}
 /* Feature Icons */
 
 .FeatureIcon {
   padding: 1rem 0;
 }
 @media (max-width: 768px) {
+  .FeatureCard {
+    height: 90%;
+    margin: 2rem 0;
+  }
   .FeatureIcon .icon {
     background-color: var(--primary);
     color: white;
