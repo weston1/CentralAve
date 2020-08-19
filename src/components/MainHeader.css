@@ -1,7 +1,6 @@
 .MainHeader {
   color: var(--secondary);
   padding: 12rem 0;
-  overflow-x: hidden;
 }
 
 .MainHeader .BackgroundImage {
@@ -11,23 +10,23 @@
 
 .main__circles {
   position: absolute;
-  top: 0;
+  top: -10vh;
   left: 0;
   width: 100vw;
   height: 100%;
   z-index: -1;
   opacity: 0.5;
-  overflow-x: visible;
-  overflow-y: hidden;
+  overflow: hidden !important;
 }
 .main__circle {
   position: absolute;
   border-radius: 50%;
+  overflow: hidden !important;
 }
 
 .main__circle:nth-child(3) {
-  left: 46%;
-  top: 229px;
+  left: 36%;
+  top: 300px;
   z-index: 2;
   width: 128px;
   height: 128px;
@@ -43,8 +42,8 @@
 }
 
 .main__circle:nth-child(5) {
-  right: calc(50% - 250px);
-  bottom: -90px;
+  right: calc(50% - 150px);
+  bottom: 0px;
   z-index: 5;
   width: 180px;
   height: 180px;
@@ -52,12 +51,12 @@
 }
 
 .main__circle:nth-child(6) {
-  top: -98px;
-  right: calc(50% - 1330px);
+  top: -250px;
+  right: calc(50% - 1400px);
   width: 1220px;
   height: 1220px;
   background: whitesmoke;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 
 .main__circle:nth-child(7) {
@@ -66,7 +65,7 @@
   z-index: 2;
   width: 103px;
   height: 103px;
-  background: white;
+  background: whitesmoke;
 }
 
 .MainHeader-left {
@@ -80,7 +79,8 @@
 }
 .MainHeader--Img {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  right: 0;
   z-index: 2;
   width: 100%;
 }
@@ -117,13 +117,14 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .MainHeader {
-    padding: 7rem 0;
+    padding: 4rem 0;
     height: 125vh;
   }
   .MainHeader-left {
-    padding: 13rem 0;
+    padding: 5rem 0;
+    margin-bottom: 20%;
   }
   .MainHeader--BG {
     margin: 3rem 0 0 0;
@@ -135,12 +136,16 @@
     text-align: left;
     z-index: 10;
   }
+  .MainHeader--Img {
+    display: block;
+    right: 0;
+    width: 100%;
+  }
   .main__circles {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
     z-index: -1;
     opacity: 0.5;
   }

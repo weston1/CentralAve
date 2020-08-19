@@ -58,9 +58,9 @@ const MainHeader = ({
         </div>
       </div>
 
-      <div className="col-lg-6 text-center my-auto py-4">
-        <Fade delay={900}>
-          {logo && <Image src={logo} alt={title} className="" />}
+      <div className="col-lg-6">
+        <Fade delay={600} triggerOnce="true">
+          {logo && <Image src={logo} alt={title} className="MainHeader--Img" />}
         </Fade>
       </div>
     </div>
