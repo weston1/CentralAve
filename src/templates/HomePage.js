@@ -93,7 +93,7 @@ export const HomePageTemplate = ({
             </Fade>
           </div>
           <div className="col-lg-6 col-10 mx-auto order-sm-0 my-auto">
-            <Slide direction="up">
+            <Slide direction="right">
               <img
                 src="../images/iphone-long.jpg"
                 className="img-fluid imgFeature"
