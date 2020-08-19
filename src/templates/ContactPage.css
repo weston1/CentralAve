@@ -61,18 +61,18 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+  .pattern-dots-img {
+    transform: translate(10px, -10px);
+  }
   .Contact--Card {
     box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11),
       0 1px 3px rgba(0, 0, 0, 0.08);
-    border-radius: var(--borderRadius);
+    border-radius: 5px 5px 10px rgba(0, 0, 0, 0.8);
     background: #fff;
     display: block;
     height: 100%;
     overflow: hidden;
-    margin: 0 4rem;
-  }
-  .Contact--Logo--Container {
-    max-width: 300px !important;
-    padding: 10% 0;
+    width: 100%;
+    margin: 1rem 2rem 0 0;
   }
 }

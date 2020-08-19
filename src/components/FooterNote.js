@@ -7,7 +7,7 @@ import Calendly from './Calendly'
 
 const FooterNote = ({ title }) => {
   return (
-    <section className="FooterNote">
+    <section className="section FooterNote">
       <div class="Footer--circles">
         <div class="Footer--circle"></div>
         <div class="Footer--circle js-rellax" data-rellax-speed="1"></div>
@@ -18,7 +18,7 @@ const FooterNote = ({ title }) => {
       </div>
       <div className="FooterNote-Container mx-auto">
         <div className="row mx-auto">
-          <div className="col-lg-7 col-md-6 col-12 taLeft my-auto">
+          <div className="col-lg-7 col-md-6 col-10 taLeft my-auto">
             <h5>Find Out Why Small Busiensses Love Us</h5>
             <h3>
               Let's grab coffee&nbsp;
@@ -30,7 +30,7 @@ const FooterNote = ({ title }) => {
               We would love to hear more about your next venture, idea or future
               project. No strings attached.
             </p>
-            <Calendly />
+            <Calendly url="https://calendly.com/centralavemarketing" />
           </div>
 
           <div className="FooterNote--Img--Container"></div>

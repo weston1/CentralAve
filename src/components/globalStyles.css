@@ -123,11 +123,16 @@ strong {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-family: var(--font-primary);
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  text-transform: none;
   margin: 0;
   margin-bottom: 0.5em;
 }
@@ -154,6 +159,15 @@ h4 {
 h5 {
   font-size: 17px;
   line-height: 30px;
+  letter-spacing: 0.2vw;
+  font-weight: 400;
+}
+h6 {
+  font-size: 17px;
+  line-height: 2;
+  letter-spacing: 0.2vw;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 p {
   font-size: 18px;
@@ -177,15 +191,29 @@ span {
     text-transform: uppercase;
   }
   h3 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 1.2;
     letter-spacing: 3px;
+    margin-top: 1rem;
   }
   h4 {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 3px;
     font-weight: 400;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.2vw;
+    font-weight: 400;
+  }
+  h6 {
+    font-size: 17px;
+    line-height: 2;
+    letter-spacing: 0.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   p {
     font-size: 16px;
@@ -257,6 +285,36 @@ ul {
   text-align: center;
   width: 40px;
   height: auto;
+}
+.icon--bubble {
+  -webkit-font-smoothing: antialiased;
+  --grid-column-count: $grid-column-count;
+  --grid-baseline: $grid-baseline;
+  --grid-baseline-calc: unitless($grid-baseline);
+  --scale-font: 1;
+  --scale-element: 0.8;
+  font-family: Neutrif, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  text-size-adjust: 100%;
+  font-size: calc((0.229vw + 13.0367px) * var(--scale-font));
+  box-sizing: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05), 0 30px 30px 0 rgba(0, 0, 0, 0.05);
+  position: absolute;
+  width: 150px;
+  left: 35%;
+  top: 160px;
+}
+.icon--bubble--image {
+  display: inline-block;
+  width: 100%;
+  transform: translate(50%);
 }
 
 .light {
@@ -1458,7 +1516,7 @@ ul {
   display: block;
   font-family: var(--font-primary);
   font-size: 14px;
-  height: 300px;
+  height: auto;
   line-height: 24px;
   margin: 1rem;
   padding-bottom: 32px;

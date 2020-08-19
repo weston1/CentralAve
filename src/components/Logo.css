@@ -7,4 +7,11 @@
   width: 12rem;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
+}
+.Logo:hover {
+  transform: scale(1.05);
+}
+.Logo:active {
+  transform: scale(0.9);
 }

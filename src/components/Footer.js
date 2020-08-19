@@ -19,7 +19,7 @@ export default () => (
         <div className="col-lg-2 col-md-4 col-6 mx-auto text-center">
           <ul>
             <li>
-              <h5>Pages</h5>
+              <h6>Pages</h6>
             </li>
             <li>
               <Link to="/services/">Services</Link>
@@ -35,7 +35,7 @@ export default () => (
         <div className="col-lg-2 col-md-4 col-6 mx-auto text-center">
           <ul>
             <li>
-              <h5>Serviecs</h5>
+              <h6>Serviecs</h6>
             </li>
             <li>
               <Link to="/contact/">Web Design</Link>
@@ -52,7 +52,7 @@ export default () => (
         <div className="col-lg-2 col-md-4 col-6 mx-auto text-center">
           <ul>
             <li>
-              <h5>Contact</h5>
+              <h6>Contact</h6>
             </li>
             <li>
               <Link to="/contact/">

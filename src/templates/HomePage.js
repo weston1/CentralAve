@@ -4,10 +4,11 @@ import { Fade, Slide } from 'react-awesome-reveal'
 import { motion } from 'framer-motion'
 import { Search, Feather, ArrowRight } from 'react-feather'
 
+import Layout from '../components/Layout'
 import MainHeader from '../components/MainHeader'
 import Content from '../components/Content'
 import Image from '../components/Image'
-import Layout from '../components/Layout'
+import Logo from '../components/Logo'
 import Calendly from '../components/Calendly'
 
 import FooterNote from '../components/FooterNote'
@@ -39,6 +40,14 @@ export const HomePageTemplate = ({
         <div className="container row">
           <div className="col-lg-8 col-12 my-auto mx-auto text-center">
             <Fade>
+              <div className="col-lg-6 mx-auto">
+                <img
+                  src="../images/logo.svg"
+                  className="img-fluid"
+                  alt="St Pete Web Development"
+                />
+              </div>
+
               <Content source={section1} />
             </Fade>
           </div>
@@ -58,7 +67,7 @@ export const HomePageTemplate = ({
             <Fade>
               <Content source={section2} />
               <Link
-                to="/services"
+                to="/contact/"
                 alt="Central Ave Web Services"
                 className="Button Button--Outline"
               >
@@ -75,7 +84,7 @@ export const HomePageTemplate = ({
             <Fade>
               <Content source={section3} />
               <Link
-                to="/services"
+                to="/services/"
                 alt="Central Ave Web Services"
                 className="Button Button--Outline"
               >
@@ -84,7 +93,7 @@ export const HomePageTemplate = ({
             </Fade>
           </div>
           <div className="col-lg-6 col-10 mx-auto order-sm-0 my-auto">
-            <Slide Direction="top">
+            <Slide direction="up">
               <img
                 src="../images/iphone-long.jpg"
                 className="img-fluid imgFeature"
@@ -147,9 +156,7 @@ export const HomePageTemplate = ({
         </div>
       </section>
 
-      <section className="section thick">
-        <FooterNote />
-      </section>
+      <FooterNote />
     </motion.div>
   </main>
 )

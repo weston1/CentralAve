@@ -64,12 +64,12 @@
 .FooterNote-Container {
   bottom: 0 !important;
   font-size: 12px;
-  background: whitesmoke;
-  background-image: url('../../static/images/iphones.jpg'); /* fallback */
-  background-image: url('../../static/images/iphones.jpg');
-  background-position: 90% 100%;
+  background: white;
+  background-image: url('../../static/images/coffee-spill.jpg'); /* fallback */
+  background-image: url('../../static/images/coffee-spill.jpg');
+  background-position: right center;
   background-repeat: no-repeat;
-  background-size: 30% 80%;
+  background-size: 35% auto;
   border-radius: 10px;
   color: black;
   padding: 5rem;
@@ -95,4 +95,28 @@
   opacity: 1;
   transition: opacity 500ms ease 0s;
   font-family: 'object-fit: contain; object-position: 50% 50%';
+}
+@media (max-width: 600px) {
+  .FooterNote-Container {
+    bottom: 0 !important;
+    font-size: 12px;
+    background: white;
+    background-image: linear-gradient(
+        250deg,
+        rgba(255, 255, 255, 0.85),
+        rgba(250, 250, 250, 0.95)
+      ),
+      url('../../static/images/coffee-spill.jpg');
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+    background-size: 150%;
+    border-radius: 10px;
+    color: black;
+    padding: 3rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem;
+    text-align: center;
+    box-shadow: var(--boxShadow);
+  }
 }

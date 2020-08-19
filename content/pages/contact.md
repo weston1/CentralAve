@@ -10,5 +10,5 @@ meta:
 section1: >-
   ## Your next solution.
 
-  Set-up a time with us to discuss your business needs and how we can help you grow.
+  Set-up a time to meet, our reach out below to discuss your business needs and how we can help you grow.
 ---

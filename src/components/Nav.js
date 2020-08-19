@@ -3,6 +3,7 @@ import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
+import LogoMini from './LogoMini'
 
 import './Nav.css'
 
@@ -50,7 +51,7 @@ export class Navigation extends Component {
           </Link>
           <div className="Nav--Links">
             <NavLink className="Nav--li Nav--Mobile" to="/">
-              <Logo className="Nav--Mobile" width="100px" />
+              <LogoMini className="Nav--Mobile" width="100px" />
             </NavLink>
             <NavLink className="Nav--li" to="/services">
               services

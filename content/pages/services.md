@@ -1,7 +1,7 @@
 ---
 template: ServicesPage
 slug: services
-title: Services
+title: Join the club.
 subtitle: We offer a flexible suite of marketing services that are proven to work in helping to scale your local business.
 featuredImage: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
 projectArray:
