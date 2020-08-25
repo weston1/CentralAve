@@ -57,7 +57,7 @@ export const HomePageTemplate = ({
             <Slide direction="left">
               <img
                 src="../images/macbook-long-scroll.jpg"
-                className="img-fluid imgFeature bg-dark"
+                className="img-fluid imgFeature"
                 alt="St Pete Web Development"
               />
             </Slide>

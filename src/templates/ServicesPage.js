@@ -17,7 +17,6 @@ import { motion } from 'framer-motion'
 
 import SecondaryHeader from '../components/SecondaryHeader'
 import Content from '../components/Content'
-import FeatureArray from '../components/FeatureArray'
 import ServiceFeatures from '../components/ServiceFeatures'
 
 import Layout from '../components/Layout'
@@ -124,7 +123,7 @@ export const ServicesPageTemplate = ({
               </p>
             </div>
           </div>
-          <div className="col-lg-8 col-11 mx-auto">
+          <div className="col-lg-8 col-11 mx-auto d-none d-md-block d-lg-block">
             <div className="FeatureCard-ImgBlock"></div>
           </div>
         </div>
@@ -151,12 +150,6 @@ export const ServicesPageTemplate = ({
           </div>
         </div>
       </section>
-
-      <Fade cascade={true}>
-        <section className="section">
-          <FeatureArray images={featureArray} />
-        </section>
-      </Fade>
 
       <FooterNote />
     </motion.div>
