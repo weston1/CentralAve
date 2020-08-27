@@ -144,6 +144,7 @@ export const ServicesPageTemplate = ({
               to="/contact/"
               alt="Central Ave Web Services"
               className="Button Button--Outline"
+              aria-label="Book a Consultation"
             >
               Book a Consultation
             </Link>

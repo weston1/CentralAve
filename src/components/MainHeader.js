@@ -44,6 +44,7 @@ const MainHeader = ({
               to="/contact/"
               className="Button Button--Solid"
               alt="Central Ave Marketing Contact Us"
+              aria-label="Let's Talk"
             >
               Let's Talk
             </Link>
@@ -51,6 +52,7 @@ const MainHeader = ({
               to="/services/"
               className="Button Button--Outline"
               alt="Central Ave Marketing Contact Us"
+              aria-label="Our Services"
             >
               Our Services
             </Link>

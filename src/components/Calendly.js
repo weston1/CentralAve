@@ -7,7 +7,11 @@ const Calendly = ({ url }) => {
 
   return (
     <div>
-      <button className="Button Button--Solid" onClick={onClick}>
+      <button
+        className="Button Button--Solid"
+        aria-label="Schedule a time"
+        onClick={onClick}
+      >
         Schedule a time
       </button>
     </div>

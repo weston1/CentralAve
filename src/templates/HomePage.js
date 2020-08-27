@@ -69,6 +69,7 @@ export const HomePageTemplate = ({
                 to="/contact/"
                 alt="Central Ave Web Services"
                 className="Button Button--Outline"
+                aria-label="Free Consultation"
               >
                 Free consultation
               </Link>
@@ -86,6 +87,7 @@ export const HomePageTemplate = ({
                 to="/services/"
                 alt="Central Ave Web Services"
                 className="Button Button--Outline"
+                aria-label="Our Digital Services"
               >
                 Our Digital Services
               </Link>
