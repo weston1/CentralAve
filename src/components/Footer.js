@@ -22,13 +22,19 @@ export default () => (
               <h6>Pages</h6>
             </li>
             <li>
-              <Link to="/services/">Services</Link>
+              <Link to="/services/" aria-label="Services">
+                Services
+              </Link>
             </li>
             <li>
-              <Link to="/services/">Featured Projects</Link>
+              <Link to="/services/" aria-label="Featured Projects">
+                Featured Projects
+              </Link>
             </li>
             <li>
-              <Link to="/contact/">Contact Us</Link>
+              <Link to="/contact/" aria-label="Contact Us">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -38,13 +44,19 @@ export default () => (
               <h6>Serviecs</h6>
             </li>
             <li>
-              <Link to="/contact/">Web Design</Link>
+              <Link to="/contact/" aria-label="Web Design">
+                Web Design
+              </Link>
             </li>
             <li>
-              <Link to="/services/">Development</Link>
+              <Link to="/services/" aria-label="Development">
+                Development
+              </Link>
             </li>
             <li>
-              <Link to="/services/">SEO</Link>
+              <Link to="/services/" aria-label="SEO">
+                SEO
+              </Link>
             </li>
           </ul>
         </div>
@@ -55,7 +67,10 @@ export default () => (
               <h6>Contact</h6>
             </li>
             <li>
-              <Link to="/contact/">
+              <Link
+                to="/contact/"
+                aria-label="20th St. and Central Ave. St Pete"
+              >
                 20th St. &amp; Central Ave. St&nbsp;Pete
               </Link>
             </li>
@@ -67,7 +82,11 @@ export default () => (
         <div className="py-3">
           <span className="text-center">
             © {new Date().getFullYear()}&nbsp;
-            <Link to="/" alt="Central Ave Marketing">
+            <Link
+              to="/"
+              alt="Central Ave Marketing"
+              aria-label="Central Ave Marketing"
+            >
               Central Ave Marketing
             </Link>
             .

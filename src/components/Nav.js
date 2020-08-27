@@ -53,10 +53,14 @@ export class Navigation extends Component {
             <NavLink className="Nav--li Nav--Mobile" to="/">
               <LogoMini className="Nav--Mobile" width="100px" />
             </NavLink>
-            <NavLink className="Nav--li" to="/services">
+            <NavLink aria-label="services" className="Nav--li" to="/services">
               services
             </NavLink>
-            <NavLink className="Nav--li" to="/contact">
+            <NavLink
+              aria-label="consultation"
+              className="Nav--li"
+              to="/contact"
+            >
               consultation
             </NavLink>
           </div>

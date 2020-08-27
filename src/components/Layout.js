@@ -55,9 +55,9 @@ export default ({ children, meta, title }) => {
               defaultTitle={siteTitle}
               titleTemplate={`%s | ${siteTitle}`}
             >
+              <html lang="en" />
               {title}
-              <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
-              <link rel="dns-prefetch" href="https://ucarecdn.com" />
+
               <link
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
                 rel="stylesheet"
@@ -69,6 +69,7 @@ export default ({ children, meta, title }) => {
               <script
                 src="https://assets.calendly.com/assets/external/widget.js"
                 type="text/javascript"
+                async
               ></script>
               <script
                 src="//code.tidio.co/pluoetqfte24pcialwix6p0guhudci23.js"
