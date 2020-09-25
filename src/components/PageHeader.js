@@ -31,24 +31,6 @@ const PageHeader = ({
         {subtitle && (
           <Content className="PageHeader--Subtitle" src={subtitle} />
         )}
-        <Transition timeout={4000} in={true} appear>
-          {status => (
-            <ul className={`box box-${status}`}>
-              <li> Animation </li>
-              <li> Transition </li>
-              <li> CSSTransition </li>
-              <li> SwitchTransition </li>
-              <li> TransitionGroup </li>
-            </ul>
-          )}
-        </Transition>
-
-        <Fade>
-          <p>Hello I will just Fade</p>
-          <Bounce>
-            <p> I will Fade and Bounce</p>
-          </Bounce>
-        </Fade>
       </div>
     </div>
   )
