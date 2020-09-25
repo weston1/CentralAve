@@ -9,7 +9,7 @@ import {
   Feather,
   Mail,
   PieChart,
-  Smartphone
+  Smartphone,
 } from 'react-feather'
 
 const ServiceFeatures = () => {

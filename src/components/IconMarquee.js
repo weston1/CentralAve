@@ -29,7 +29,7 @@ export const IconMarquee = () => {
                 backgroundColor: 'var(--secondary)',
                 textAlign: 'center',
                 lineHeight: '90px',
-                boxShadow: '5px 5px 10px #888888'
+                boxShadow: '5px 5px 10px #888888',
               }}
             >
               <Star />

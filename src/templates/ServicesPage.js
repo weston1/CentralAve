@@ -10,7 +10,7 @@ import {
   Feather,
   Mail,
   PieChart,
-  Smartphone
+  Smartphone,
 } from 'react-feather'
 import { Fade } from 'react-awesome-reveal'
 import { motion } from 'framer-motion'
@@ -30,7 +30,7 @@ export const ServicesPageTemplate = ({
   img0,
   img1,
   featuredImage,
-  featureArray
+  featureArray,
 }) => (
   <main className="ServicesPage">
     <motion.div

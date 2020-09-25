@@ -17,7 +17,7 @@ export const HomePageTemplate = ({
   logo,
   section1,
   section2,
-  section3
+  section3,
 }) => (
   <main className="Home">
     <motion.div

@@ -11,7 +11,7 @@ export class Navigation extends Component {
   state = {
     active: false,
     activeSubNav: false,
-    currentPath: false
+    currentPath: false,
   }
 
   componentDidMount = () =>
@@ -24,7 +24,7 @@ export class Navigation extends Component {
 
   toggleSubNav = subNav =>
     this.setState({
-      activeSubNav: this.state.activeSubNav === subNav ? false : subNav
+      activeSubNav: this.state.activeSubNav === subNav ? false : subNav,
     })
 
   render() {

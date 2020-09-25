@@ -12,7 +12,7 @@ const MainHeader = ({
   logo,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' MainHeader-left'
   return (
@@ -71,7 +71,7 @@ const MainHeader = ({
 
 MainHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
 }
 
 export default MainHeader
