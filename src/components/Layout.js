@@ -38,15 +38,15 @@ export default ({ children, meta, title }) => {
           }
         }
       `}
-      render={data => {
+      render={(data) => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {},
           subNav = {
             posts: data.allPosts.hasOwnProperty('edges')
-              ? data.allPosts.edges.map(post => {
+              ? data.allPosts.edges.map((post) => {
                   return { ...post.node.fields, ...post.node.frontmatter }
                 })
-              : false,
+              : false
           }
 
         return (
@@ -57,25 +57,15 @@ export default ({ children, meta, title }) => {
             >
               <html lang="en" />
               {title}
-
               <link
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
                 rel="stylesheet"
+                rel="preload"
               />
               <link
                 href="https://assets.calendly.com/assets/external/widget.css"
                 rel="stylesheet"
               />
-              <script
-                src="https://assets.calendly.com/assets/external/widget.js"
-                type="text/javascript"
-                async
-              ></script>
-              <script
-                src="//code.tidio.co/pluoetqfte24pcialwix6p0guhudci23.js"
-                async
-              ></script>
-
               {/* Add font link tags here */}
             </Helmet>
 
@@ -95,6 +85,18 @@ export default ({ children, meta, title }) => {
             <Fragment>{children}</Fragment>
 
             <Footer />
+            <Fragment>
+              <script
+                async
+                src="https://assets.calendly.com/assets/external/widget.js"
+                type="text/javascript"
+              ></script>
+              <script
+                async
+                src="//code.tidio.co/pluoetqfte24pcialwix6p0guhudci23.js"
+                type="text/javascript"
+              ></script>
+            </Fragment>
           </Fragment>
         )
       }}

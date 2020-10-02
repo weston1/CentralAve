@@ -1,10 +1,14 @@
 @font-face {
   font-family: 'Dogma';
   src: url('../../static/fonts/DogmaBold.ttf');
+    font-display: swap;
+
 }
 @font-face {
   font-family: 'Proxima-Nova';
   src: url('../../static/fonts/ProximaNovaReg.otf');
+    font-display: swap;
+
 }
 :root {
   --primary: #055057;
