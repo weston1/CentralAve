@@ -7,7 +7,6 @@ import { Search, Feather, ArrowRight } from 'react-feather'
 import Layout from '../components/Layout'
 import MainHeader from '../components/MainHeader'
 import Content from '../components/Content'
-import Image from '../components/Image'
 import FooterNote from '../components/FooterNote'
 
 export const HomePageTemplate = ({
@@ -17,7 +16,7 @@ export const HomePageTemplate = ({
   logo,
   section1,
   section2,
-  section3,
+  section3
 }) => (
   <main className="Home">
     <motion.div
